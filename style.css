@@ -1,23 +1,14 @@
 /*
-Theme Name: Parallax One
-Theme URI: http://themeisle.com/themes/parallax-one/
-Author: ThemeIsle
-Author URI: http://themeisle.com/
-Description: Parallax One is a free and elegant one page theme that can be used for web agency business,corporate business,personal and parallax business portfolio, photography sites and freelancer . It comes with a clean and beautiful design, completed by the parallax effect, which makes it run smoothly and easily. You can simply modify everything, as the theme comes with a complex and user-friendly set of customization options. Parallax One is ecommerce (WooCommerce) Compatible, WPML and SEO Friendly and is one of the best business themes.
-Version: 2.0.0
+Theme Name: Bayard Theme
+Theme URI: 
+Author: Martin Baljan
+Author URI: 
+Description: Wordpress Theme für Bayard Consulting Relaunch
+Version: 0.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: parallax-one
-Tags:black, blue, gray, white, light, responsive-layout, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Parallax One is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-
+Text Domain: 
+Tags:
 
 1. GLOBAL STYLES (USED IN VARIOUS SECTION OF THE WEBSITE)
 	1.0 GOOGLE FONTS
@@ -190,7 +181,7 @@ a:hover {
 }
 
 .navbar-inverse .navbar-nav > li.not-active {
-	color: #008ed6;
+	color: #81a715;
 }
 
 .mailchimp-success,
@@ -747,7 +738,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #008ed6;
+	background: #81a715;
 	border-color: inherit;
 
 }
@@ -1091,7 +1082,7 @@ header .navbar-brand {
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-	background-color: #008ed6;
+	background-color: #81a715;
 	height: 4px;
 	width: 30px;
 	-webkit-border-radius: 2px;
@@ -1478,7 +1469,7 @@ header .navbar-brand {
 	left: 0; 
 	top: 8px;
 	font-size: 36px;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .feature-list li span {
@@ -1880,7 +1871,7 @@ header .navbar-brand {
 }
 
 .timeline-box-wrap .info:hover {
-	border-bottom-color: #008ed6;
+	border-bottom-color: #81a715;
 }
 
 .timeline-box-wrap .info h1 {
@@ -1901,7 +1892,7 @@ header .navbar-brand {
 
 .timeline-box-wrap .info h1 a:hover {
 	text-decoration: none;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .timeline-box-wrap .info h1:after {
@@ -1909,7 +1900,7 @@ header .navbar-brand {
 	height: 2px;
 	width: 80px;
 	display: block;
-	background: #008ed6;
+	background: #81a715;
 	margin-top: 5px;
 }
 
@@ -1988,7 +1979,7 @@ a.control_next {
 	display: block;
 	width: auto;
 	height: auto;
-	color: #008ed6;
+	color: #81a715;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 70px;
@@ -2009,7 +2000,7 @@ a.control_prev {
 	display: block;
 	width: auto;
 	height: auto;
-	color: #008ed6;
+	color: #81a715;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 70px;
@@ -2192,7 +2183,7 @@ a.control_next.fade-btn {
     height: 81px;
     border: 3px solid #FFF;
     background-clip: padding-box;
-    box-shadow: 0px 0px 0px 1px #008ED6;
+    box-shadow: 0px 0px 0px 1px #81a715;
     background-color: #FAFAFA;
 }
 
@@ -2247,7 +2238,7 @@ a.control_next.fade-btn {
 }
 
 .testimonials-box .feedback:hover {
-  border-bottom-color: #008ed6;
+  border-bottom-color: #81a715;
 }
 
 .galcolumn .testimonials-box {
@@ -2529,7 +2520,7 @@ div.wpcf7-mail-sent-ng {
 
 .woocommerce ul.products li.product h3:hover,
 .woocommerce .products .product h3:hover {
-	color: #008ED6;
+	color: #81a715;
 	text-decoration: none;
 }
 
@@ -2738,7 +2729,7 @@ div.wpcf7-mail-sent-ng {
 	height: 2px;
 	width: 80px;
 	display: block;
-	background: #008ed6;
+	background: #81a715;
 	margin-top: 5px;
 }
 
@@ -2767,7 +2758,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce div.product form.cart .button:hover,
 .woocommerce div.product .single_add_to_cart_button:hover {
 	color: #ffffff;
-	background: #008ed6 !important;
+	background: #81a715 !important;
 	text-decoration: none;
 	border: none;
 }
@@ -2809,7 +2800,7 @@ div.wpcf7-mail-sent-ng {
 
 .woocommerce div.product p.stock {
 	margin: 10px 0 30px;
-	color: #008ed6;
+	color: #81a715;
 	font-size: 14px;
 }
 
@@ -2964,7 +2955,7 @@ div.wpcf7-mail-sent-ng {
 }
 
 .woocommerce #review_form #respond .form-submit input {
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -2976,14 +2967,14 @@ div.wpcf7-mail-sent-ng {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 7px 30px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 	min-width: 10px;
 }
 
 .woocommerce #review_form #respond .form-submit input:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce-page .upsells.products ul li.product, 
@@ -3066,7 +3057,7 @@ div.wpcf7-mail-sent-ng {
 }
 
 .woocommerce .woocommerce-breadcrumb a:hover {
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce div.product .woocommerce-tabs h2:after {
@@ -3100,7 +3091,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce .woocommerce-message {
 	border: none;
 	background-color: #39AFEA;
-	border-bottom: 3px solid #008ED6;
+	border-bottom: 3px solid #81a715;
 	color: #EEF9FF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -3140,7 +3131,7 @@ div.wpcf7-mail-sent-ng {
 }
 
 .woocommerce .woocommerce-message .button:hover {
-	color: #008ED6;
+	color: #81a715;
 	background: rgba(255,255,255,0.9);
 }
 
@@ -3160,7 +3151,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce .cart .button, 
 .woocommerce .cart input.button {
 	float: none;
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3172,14 +3163,14 @@ div.wpcf7-mail-sent-ng {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 0px 20px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 }
 
 .woocommerce .cart .button:hover, 
 .woocommerce .cart input.button:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce table.shop_table {
@@ -3259,7 +3250,7 @@ div.wpcf7-mail-sent-ng {
 
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
 	float: none;
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3271,14 +3262,14 @@ div.wpcf7-mail-sent-ng {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 0px 20px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 	float: right;
 }
 
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce-shipping-calculator a {
@@ -3309,7 +3300,7 @@ div.wpcf7-mail-sent-ng {
 
 .woocommerce .woocommerce-info {
 	border: none;
-	border-bottom: 3px solid #008ED6;
+	border-bottom: 3px solid #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3394,7 +3385,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce #payment #place_order, 
 .woocommerce-page #payment #place_order {
 	float: none;
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3406,7 +3397,7 @@ div.wpcf7-mail-sent-ng {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 0px 20px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 	float: right;
 }
 
@@ -3414,7 +3405,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce-page #payment #place_order:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce #respond input#submit, 
@@ -3422,7 +3413,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce button.button, 
 .woocommerce input.button {
 	float: none;
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3434,7 +3425,7 @@ div.wpcf7-mail-sent-ng {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 0px 20px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 }
 
 .woocommerce #respond input#submit:hover, 
@@ -3443,7 +3434,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce input.button:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .woocommerce .order_details {
@@ -3570,7 +3561,7 @@ div.wpcf7-mail-sent-ng {
 .woocommerce-page ul.products li.product:hover,
 .woocommerce .products .product:hover, 
 .woocommerce-page .products .product:hover {
-	border-bottom-color: #008ed6;
+	border-bottom-color: #81a715;
 }
 
 .woocommerce-page #primary {
@@ -3732,7 +3723,7 @@ div.bbp-template-notice.info {
 }
 
 div.bbp-template-notice a {
-	color: #008ed6;
+	color: #81a715;
 	text-decoration: none;
 }
 
@@ -3836,7 +3827,7 @@ div.bbp-template-notice a {
     height: 2px;
     width: 80px;
     display: block;
-    background: #008ed6;
+    background: #81a715;
     margin-top: 5px;
 }
 
@@ -3977,7 +3968,7 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body di
 }
 
 #bbpress-forums .bbp-admin-links a:hover {
-	color: #008ed6;
+	color: #81a715;
 }
 
 .bbp-forum-header a.bbp-forum-permalink, 
@@ -3996,7 +3987,7 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body di
 }
 
 #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a {
-	background: #008ED6;
+	background: #81a715;
 	opacity: 0.8;
 	color: #FFF;
 }
@@ -4029,7 +4020,7 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body di
 
 .footer-links li a:hover {
 	text-decoration: none;
-	color: #008ed6;
+	color: #81a715;
 }
 
 ul.social-icons {
@@ -4162,7 +4153,7 @@ footer.footer #wp-calendar a {
 footer.footer #wp-calendar a:hover {
 	background-color: rgba(0, 0, 0, 0.15);
 	text-decoration: none;
-	background: #008ed6;
+	background: #81a715;
 	color: #fff;
 }
 
@@ -4244,7 +4235,7 @@ footer.footer #wp-calendar td {
 }
 
 .widget_search .search-form:hover:before {
-	color: #008ed6;
+	color: #81a715;
 }
 
 /* parallax custom widgets footer */
@@ -4304,28 +4295,28 @@ footer.footer .team-member-box .team-member {
 /* NAVBAR AND LINK COLORS */
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-	color: #008ed6;
+	color: #81a715;
 }
 
 a {
-	color: #008ed6;
+	color: #81a715;
 }
 
 a:hover {
-	color: #008ed6;
+	color: #81a715;
 }
 
 .border-bottom-hover:hover {
-	border-bottom-color: #008ed6;
+	border-bottom-color: #81a715;
 }
 
 .sticky-navigation .main-navigation li a:hover,
 .sticky-navigation .login-register li.login a:hover {
-	color: #008ed6;
+	color: #81a715;
 }
 
 .sticky-navigation .main-navigation li.current > a {
-	color: #008ed6;
+	color: #81a715;
 }
 
 /* INPUT FIXES */
@@ -4333,7 +4324,7 @@ a:hover {
 .textarea-box:active,
 .input-box:focus,
 .textarea-box:focus {
-	border-color: #008ed6;
+	border-color: #81a715;
 }
 
 /* BUTTONS*/
@@ -4350,7 +4341,7 @@ a:hover {
 .standard-button:hover,
 .navbar-register-button:hover {
 	color: #ffffff;
-	background: #008ed6;
+	background: #81a715;
 	text-decoration: none;
 }
 
@@ -4361,7 +4352,7 @@ a:hover {
 
 .standard-button:active,
 .navbar-register-button:active {
-	background: #008ed6 !important;
+	background: #81a715 !important;
 	border-color: inherit !important;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -4369,18 +4360,18 @@ a:hover {
 
 /* COLORED BACKGROUND AND TEXT*/
 .color-bg {
-	background: #008ed6;
+	background: #81a715;
 }
 
 .colored-text {
-	color: #008ed6;
+	color: #81a715;
 }
 
 /* COLORED BORDERS AND LINES */
 .colored-line-left,
 .colored-line-right,
 .colored-line {
-	background: #008ed6;
+	background: #81a715;
 }
 
 .border-right-colored {
@@ -4467,7 +4458,7 @@ a:hover {
 }
 
 .post-list h1.entry-title a:hover {
-	color: #008ed6;
+	color: #81a715;
 	text-decoration: none;
 }
 
@@ -4475,7 +4466,7 @@ a:hover {
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
-	color: #008ED6;
+	color: #81a715;
 	margin-top: 0;
 }
 
@@ -4512,8 +4503,8 @@ a:hover {
 }
 
 .post-list article.sticky {
-	border: 1px solid #008ed6;
-	border-bottom: 4px solid #008ed6;
+	border: 1px solid #81a715;
+	border-bottom: 4px solid #81a715;
 }
 
 .posts-navigation {
@@ -4748,7 +4739,7 @@ h2.screen-reader-text {
 }
 
 .comment-list .comment-metadata {
-	color: #008ed6;
+	color: #81a715;
 	font-size: 12px;
 	line-height: 16px;
 	font-style: italic;
@@ -4811,7 +4802,7 @@ h2.screen-reader-text {
 }
 
 .comment-form .form-submit input {
-	background: #008ed6;
+	background: #81a715;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -4823,14 +4814,14 @@ h2.screen-reader-text {
 	text-shadow: none;
 	text-transform: uppercase;
 	padding: 7px 30px;
-	border: 1px solid #008ed6;
+	border: 1px solid #81a715;
 	min-width: 10px;
 }
 
 .comment-form .form-submit input:hover {
 	background: #F7F8FA;
 	border: 1px solid #eaebec;
-	color: #008ed6;
+	color: #81a715;
 }
 
 .comment-reply-title {
@@ -4854,7 +4845,7 @@ h2.screen-reader-text {
 }
 
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
-	background: #008ed6!important;
+	background: #81a715!important;
 }
 
 .mejs-controls .mejs-button button:focus {
@@ -4862,7 +4853,7 @@ h2.screen-reader-text {
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-float {
-	background: #008ed6!important;
+	background: #81a715!important;
 }
 
 .wp-playlist-caption span{
@@ -5002,7 +4993,7 @@ h2.screen-reader-text {
 	height: 2px;
 	width: 80px;
 	display: block;
-	background: #008ed6;
+	background: #81a715;
 	float: left;
 }
 
@@ -5069,7 +5060,7 @@ h2.screen-reader-text {
 .widget_calendar a:hover {
 	background-color: rgba(0, 0, 0, 0.15);
 	text-decoration: none;
-	background: #008ed6;
+	background: #81a715;
 	color: #fff;
 }
 
@@ -5150,7 +5141,7 @@ h2.screen-reader-text {
 }
 
 .widget_search .search-form:hover:before {
-	color: #008ed6;
+	color: #81a715;
 }
 
 #secondary .service-box {
@@ -5732,7 +5723,7 @@ h2.screen-reader-text {
 
 	.sticky-navigation .main-navigation ul .this-open > .dropdownmenu, 
 	.this-open > .dropdownmenu {
-		background: #008ed6;
+		background: #81a715;
 	}
 
 	.dropdownmenu:before {
@@ -5747,7 +5738,7 @@ h2.screen-reader-text {
 	}
 
 	.this-open > a {
-		color: #008ed6 !important;
+		color: #81a715 !important;
 	}
 
 	.has_children > ul {
