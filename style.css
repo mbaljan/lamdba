@@ -4,7 +4,7 @@ Theme URI:
 Author: Martin Baljan
 Author URI: 
 Description: Wordpress Theme für Bayard Consulting Relaunch
-Version: 0.0.2
+Version: 0.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 
@@ -1033,13 +1033,15 @@ header .navbar-brand {
 .sticky-navigation-open .sticky-navigation {
 	top: 0px;
 	opacity: 1;
+    height: 115px;
+
 }
 
 .admin-bar .sticky-navigation-open .sticky-navigation {
 	top: 32px;
 	opacity: 1;
     border-bottom: solid 2px #81a715;
-    height: 115px
+ 
 }
 
 .sticky-navigation-open {
@@ -1306,7 +1308,7 @@ header .navbar-brand {
 }
 
 .services {
-	background-color: #F7F8FA;
+	background-color: white;
 	border-bottom: 1px solid #eaebec;
 }
 
@@ -2199,6 +2201,7 @@ a.control_next.fade-btn {
 	font-style: italic;
 	margin-top: 20px;
 	margin-bottom: 0;
+    text-align: left;
 }
 
 .feedback h5 {
