@@ -187,6 +187,7 @@ function parallax_one_scripts() {
 	wp_enqueue_style( 'parallax-one-style', get_stylesheet_uri(), array('parallax-one-bootstrap-style'),'1.0.0');
 
 	wp_enqueue_script( 'parallax-one-bootstrap', parallax_get_file('/js/bootstrap.min.js'), array(), '3.3.5', true );
+    wp_enqueue_style( 'additional-styles', parallax_get_file( '/css/base.css'),array(), '0.0.1');
 		
 	wp_enqueue_script( 'parallax-one-custom-all', parallax_get_file('/js/custom.all.js'), array('jquery'), '1.0.0', true );
 

@@ -139,9 +139,49 @@
                                 array( 
                                     'theme_location'    => 'primary',
                                     'container'         => false,
-                                    'menu_class'        => 'nav navbar-nav navbar-right main-navigation small-text', 
+                                    'menu_class'        => 'nav navbar-nav main-navigation small-text', 
                                     'fallback_cb'       => 'parallax_one_wp_page_menu' ) );
     					?>
+                            <div class="socialIcons">
+
+                                    <?php
+                        global $wp_customize;
+
+
+                        /* OPTIONAL FOOTER LINKS */
+                        wp_nav_menu( 
+                            array( 
+                                'theme_location'    => 'parallax_footer_menu',
+                                'container'         => false,
+                                'menu_class'        => 'footer-links small-text',
+                                'depth' 			=> 1,
+                                'fallback_cb'       => false ) );
+
+                        /* SOCIAL ICONS */
+
+                        $parallax_one_social_icons = get_theme_mod('parallax_one_social_icons',json_encode(array(array('icon_value' =>'icon-social-facebook' , 'link' => '#'),array('icon_value' =>'icon-social-twitter' , 'link' => '#'),array('icon_value' =>'icon-social-googleplus' , 'link' => '#'))));
+
+                        if( !empty( $parallax_one_social_icons ) ){
+
+                            $parallax_one_social_icons_decoded = json_decode($parallax_one_social_icons);
+
+                            if( !empty($parallax_one_social_icons_decoded) ){
+
+                                echo '<ul class="social-icons">';
+
+                                    foreach($parallax_one_social_icons_decoded as $parallax_one_social_icon){
+
+                                        echo '<li><a href="'.esc_url($parallax_one_social_icon->link).'"><span class="'.esc_attr($parallax_one_social_icon->icon_value).' transparent-text-dark"></span></a></li>';
+
+                                    }
+
+                                echo '</ul>';
+
+                            }
+                        }
+                    ?>
+                            <?php the_widget( 'WP_Widget_Search', $instance, $args ); ?>
+                        </div>
                     </div>
 					<!-- /END MENU -->
                 </div>

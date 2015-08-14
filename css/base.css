@@ -1,0 +1,131 @@
+.socialIcons { 
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+.social-icons {
+    float: left;
+}
+
+.socialIcons .social-icons {
+    margin:10px 0 0 4em;
+}
+
+.clientHeadline {
+    text-align: center;
+}
+.clientHeadline h2 { 
+    margin-top: 90px;
+}
+
+.clientHeadline ul { 
+    margin-bottom: 60px;
+}
+
+.socialIcons .social-icons li a span {
+    color:white;
+    position: relative;
+    top: 4px;
+    font-size: 21px;
+}
+
+.socialIcons .social-icons li a:hover span {
+    color:white;
+}
+
+.socialIcons .social-icons li a {
+    background-color: #81a715;
+    border: solid 1px #81a715;
+    padding: .2em .3em .2em .3em;
+    border-radius: 3px;
+    color:white;
+}
+
+.socialIcons .social-icons li a:hover {
+    background-color: #a7ce3b; 
+}
+
+input#searchsubmit {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #81a715;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding:.7em;
+    margin:1em;
+    font-size:.9em;
+    background-color: #81a715;
+    color:white;
+    background-image: none;
+}
+
+input#searchsubmit:hover {
+   background-color: #a7ce3b;
+    border: 1px solid #81a715;
+	text-decoration: none;
+}
+
+.widget.widget_search {
+ float: left;   
+ margin: 0 0 0 4em;
+}
+        
+/* search form */
+.widget_search .screen-reader-text {
+	display: none;
+}
+
+.widget_search label {
+	width: 100%;
+}
+
+.widget_search input {
+	width: 100%;
+	border: 1px solid #E7E7E7;
+	padding: 10px 50px 10px 10px;
+	font-weight: 300;
+}
+
+.widget_search form {
+	position: relative;
+}
+
+.widget_search .search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent;
+	width: 51px;
+	height: 44px;
+	padding: 0;
+	text-indent: -99999999px;
+	border: none;
+	box-shadow: none;
+}
+
+.widget_search .search-submit:hover {
+	box-shadow: none;
+	background: none;
+}
+
+.widget_search .search-form:before {
+	content: "\e0a6";
+	font-family: "stamp-icons" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 25px;
+	position: absolute;
+	right: 11px;
+	top: 10px;
+	color: #949495;
+}

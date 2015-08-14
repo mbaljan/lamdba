@@ -912,6 +912,8 @@ h2.site-description {
 /* STICKY NAVIGATION AND LOGO */
 #stamp-navigation {
 	float: right;
+    position: relative;
+    top: 30px;
 }
 
 .appear-on-scroll {
@@ -925,7 +927,7 @@ header .navbar-brand {
 }
 
 .navbar-brand > img {
-	max-height: 56px;
+	max-height: 85px;
 	display: inline-block;
 }
 
@@ -1036,6 +1038,8 @@ header .navbar-brand {
 .admin-bar .sticky-navigation-open .sticky-navigation {
 	top: 32px;
 	opacity: 1;
+    border-bottom: solid 2px #81a715;
+    height: 115px
 }
 
 .sticky-navigation-open {
