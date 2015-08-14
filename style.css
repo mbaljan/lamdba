@@ -252,7 +252,7 @@ h5 {
 h1.intro {
 	font-size: 3.75rem;
 	line-height: 5rem;
-	text-align: center;
+	text-align: left;
 }
 
 h1.single-title {
@@ -1163,7 +1163,7 @@ header .navbar-brand {
     margin-top: 30px;
     margin-bottom: 40px;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
 	font-size: 18px;
 	line-height: 28px;
 }
@@ -4289,7 +4289,7 @@ footer.footer .team-member-box .team-member {
 
 /* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
 .overlay-layer-wrap {
-	background: rgba(0, 5, 8, 0.6);
+	background: rgba(0, 5, 8, 0.4);
 }
 
 .overlay-layer-2 {
