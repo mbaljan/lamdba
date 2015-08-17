@@ -3,20 +3,24 @@ var livereload = require('gulp-livereload');
 var source = ['./**/*.php','./**/*.css'];
 var iconfont = require('gulp-iconfont');
 var runTimestamp = Math.round(Date.now()/1000);
- 
+var consolidate = require('gulp-consolidate');
+var iconfontCss = require('gulp-iconfont-css');
+var fontName = 'Icons';
+
 gulp.task('iconfont', function(){
-  return gulp.src(['iconfont/*.svg'])
-    .pipe(iconfont({
-      fontName: 'icons', // required 
-      appendUnicode: true, // recommended option 
-      formats: ['ttf', 'eot', 'woff', 'svg'], // default, 'woff2' and 'svg' are available 
-      timestamp: runTimestamp, // recommended to get consistent builds when watching files 
+  gulp.src(['./iconfont/*.svg'])
+    .pipe(iconfontCss({
+      fontName: fontName,
+      path: './templates/iconfont.css',
+      targetPath: '../css/iconfont.css',
+      fontPath: '../fonts/'
     }))
-      .on('glyphs', function(glyphs, options) {
-        // CSS templating, e.g. 
-        console.log(glyphs, options);
-      })
-    .pipe(gulp.dest('fonts/'));
+    .pipe(iconfont({
+      fontName: fontName,
+      formats: ['ttf', 'eot', 'woff', 'svg'],
+      normalize: true
+     }))
+    .pipe(gulp.dest('./fonts/'));
 });
 
 gulp.task('default',function(){

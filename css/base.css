@@ -161,14 +161,20 @@ input#searchsubmit:hover {
     -webkit-transition: background 300ms linear;
     -moz-transition: background 300ms linear;
     transition: background 300ms linear;
-    border:solid 1px #81a715;
+    border:solid 1px #a7ce3b;
     height: 32px;
     width: 32px;
 }
 
 
 .icon-up-open:after {
-   content:url(../images/scrollUp.svg); width: 200px; height: 200px;
+   font-family: 'Icons', Helvetica Neue, Sans-serif;
+    content: "\E002";
+    font-style: normal;
+    font-size: 15px;
+    position: relative;
+    bottom: 1px;
+    right: 2px;
 }
 
 @media (max-width: 1095px) {
