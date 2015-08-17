@@ -151,17 +151,10 @@ input#searchsubmit:hover {
 	color: #949495;
 }
 
-a.scrollup-pill {
-    zIndex: 9999999;
-    content: " ♥ "; color: firebrick; font-size: 2em; 
+#scrollUp {
     bottom: 20px;
-    background: #81a715;
-    color: #fff;
-    font-size: 12px;
-    font-family: sans-serif;
-    text-decoration: none;
+    background: #81a715 !important;
     opacity: .9;
-    padding:.5em 1.4em .5em 1.4em;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -169,11 +162,13 @@ a.scrollup-pill {
     -moz-transition: background 300ms linear;
     transition: background 300ms linear;
     border:solid 1px #81a715;
+    height: 32px;
+    width: 32px;
 }
 
-a.scrollup-pill:hover {
-	background: #a7ce3b;
-	color: #fff;
+
+.icon-up-open:after {
+   content:url(../images/scrollUp.svg); width: 200px; height: 200px;
 }
 
 @media (max-width: 1095px) {
