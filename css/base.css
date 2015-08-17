@@ -3,13 +3,17 @@ width: 100%;
 max-width: 1200px;
 }
 
+.section-overlay-layer {
+    padding-bottom: 3em;
+}
+
 .socialIcons { 
     float: left;
     position: relative;
     top: 5px;
 }
 
-.social-icons {
+.socialIcons .social-icons {
     float: left;
 }
 
