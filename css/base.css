@@ -271,6 +271,12 @@ input#searchsubmit:hover {
     padding-top: 55px !important;
     }
     
+    media (min-width: 768px)
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: none !important;
+    margin-left: 0;
+}
+    
 }
     
 
