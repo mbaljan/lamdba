@@ -156,11 +156,8 @@ input#searchsubmit:hover {
     bottom: 20px;
     background: #81a715 !important;
     opacity: .9;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: background 300ms linear;
-    -moz-transition: background 300ms linear;
     transition: background 300ms linear;
     border:solid 1px #a7ce3b;
     height: 32px;
@@ -240,8 +237,40 @@ input#searchsubmit:hover {
     float: none;
     width: 100%;
     position: relative;
-    top: 3em;
+    top: 2.8em;
     margin: auto;
     background-color: white;
+    border: none;
+    }
+    
+    .socialIcons {
+    float: none;
+    top: 5px;
+    padding: 1em;
+    margin-bottom: 2em;
+    }
+    
+    ul#menu-navigation {
+    padding: 2em 0 0 2em;
+    }
+    
+    .widget.widget_search {
+    float:none;
+    margin: 0 1em 0 1em;
+    }
+        
 }
+
+@media (max-width: 580px) {
+
+    #stamp-navigation {
+    top: 3.2em;
+    }
+    
+    .header .overlay-layer {
+    padding-top: 55px !important;
+    }
+    
+}
+    
 

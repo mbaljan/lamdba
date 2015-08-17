@@ -5572,7 +5572,7 @@ h2.screen-reader-text {
 /*---------------------------------------
    6.6 FIXES FOR <= 768PX SCREENS          
 -----------------------------------------*/
-@media (max-width: 767px) {
+@media (max-width: 880px) {
 	
 	html {
 		font-size: 80%;
