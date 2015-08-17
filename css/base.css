@@ -61,6 +61,7 @@ border-color: #fff;
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: #fff;
+    box-shadow: none;
 }
 
 .socialIcons .social-icons li a:hover {
@@ -188,7 +189,7 @@ input#searchsubmit:hover {
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1015px) {
 	.socialIcons .social-icons {
     display:none;
     }
@@ -199,7 +200,7 @@ input#searchsubmit:hover {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 880px) {
     .navbar-header {
         float: none;
     }

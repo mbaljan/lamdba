@@ -1034,16 +1034,16 @@ header .navbar-brand {
 	top: 0px;
 	opacity: 1;
     height: 115px;
+    border-bottom: solid 3px #81a715;
+    border-top: solid 3px #81a715;
+    border-radius: 3px;
+ 
 
 }
 
 .admin-bar .sticky-navigation-open .sticky-navigation {
 	top: 32px;
 	opacity: 1;
-    border-bottom: solid 3px #81a715;
-    border-top: solid 3px #81a715;
-    border-radius: 3px;
- 
 }
 
 .sticky-navigation-open {
