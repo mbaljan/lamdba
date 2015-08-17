@@ -164,8 +164,8 @@ input#searchsubmit:hover {
     border:solid 1px #a7ce3b;
     height: 32px;
     width: 32px;
+    text-decoration: none;
 }
-
 
 .icon-up-open:after {
    font-family: 'Icons', Helvetica Neue, Sans-serif;
