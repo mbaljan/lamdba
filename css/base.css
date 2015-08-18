@@ -51,6 +51,10 @@ max-width: 1200px;
     color:white;
 }
 
+.service-box p {
+    text-align: left;
+}
+
 navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: #FFF;
 }
@@ -193,7 +197,6 @@ input#searchsubmit:hover {
 }
 
 #scrollUp:hover{
-
     background: #a7ce3b !important;
 
 }
