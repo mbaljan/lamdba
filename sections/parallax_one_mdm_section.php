@@ -5,15 +5,17 @@
  * @package parallax-one
  */
 
+//TODO: integrate in backend
+
 	get_header(); 
 ?>
-<section class="services" id="services">
-			<div class="section-overlay-layer">
-				<div class="container">
+    <section class="services" id="services">
+        <div class="section-overlay-layer">
+            <div class="container">
 
-    <!-- SECTION HEADER -->
-    <div class="section-header">
-        <?php
+                <!-- SECTION HEADER -->
+                <div class="section-header">
+                    <?php
 
 
 							
@@ -24,29 +26,24 @@
 
 						?>
 
-            <?php
+                        <?php
 
 								echo '<div class="sub-heading">Test</div>';
 						
 								echo '<div class="sub-heading paralax_one_only_customizer"></div>';
 							
 						?>
-    </div>
+                </div>
 
 
-					<?php
+                <?php
 						
 							echo '<div id="our_services_wrap" class="services-wrap">';
 								
 										echo '<div class="service-box"><div class="single-service border-bottom-hover">';
 
-														echo '<div class="service-icon colored-text"><span class="Test"></span></div>';
-											
-												
-														echo '<img src=""/>';
-											
 
-												echo '<h3 class="colored-text">Test</h3>';
+												echo '<h3 class="colored-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>';
 										
 
 											
@@ -57,6 +54,6 @@
 							echo '</div>';
 						
 					?>
-				</div>	
-			</div>
-		</section>
+            </div>
+        </div>
+    </section>

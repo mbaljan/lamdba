@@ -20,10 +20,18 @@
 }
 
 
-.icon-uEA01-scrollUp:before {
+.icon-arrow-down:before {
 	content: "\E001";
 }
 
-.icon-up:before {
+.icon-arrow-left:before {
 	content: "\E002";
+}
+
+.icon-arrow-right:before {
+	content: "\E003";
+}
+
+.icon-arrow-up:before {
+	content: "\E004";
 }

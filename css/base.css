@@ -5,6 +5,7 @@ max-width: 1200px;
 
 .section-overlay-layer {
     padding-bottom: 3em;
+    /*TODO: CHange Spacings for smaller Devices*/
 }
 
 .socialIcons { 
@@ -53,6 +54,11 @@ max-width: 1200px;
 
 .service-box p {
     text-align: left;
+}
+
+.sticky-navigation .main-navigation ul .dropdownmenu, .dropdownmenu {
+    color: #81a715;
+    font-weight: 600;
 }
 
 navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {

@@ -23,7 +23,7 @@ gulp.task('iconfont', function(){
     .pipe(gulp.dest('./fonts/'));
 });
 
-gulp.task('default',function(){
+gulp.task('watch',function(){
     gulp.watch(source,function(){
         gulp.src(source)
             .pipe(livereload({ start: true }))
