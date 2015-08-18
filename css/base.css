@@ -129,12 +129,39 @@ input#searchsubmit:hover {
 	box-shadow: none;
 }
 
-.widget_search .search-submit:hover {
+.widget_search.search-submit:hover {
 	box-shadow: none;
 	background: none;
+    color:#81a715;
 }
 
-.widget_search .search-form:before {
+.search-submit:focus {
+	box-shadow: none !important;
+	background: none !important;
+    color:#81a715;
+}
+
+.search-submit:active {
+	box-shadow: none !important;
+	background: none !important;
+    color:#81a715;
+}
+
+.standard-button, .navbar-register-button {
+    background-color: #81A715;
+    background-image: none;
+    background-size: contain;
+    border: solid 2px white;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.standard-button:hover {
+    background-color: #a7ce3b;
+    border: solid 2px white;
+}
+
+.widget_search.search-form:before {
 	content: "\e0a6";
 	font-family: "stamp-icons" !important;
 	font-style: normal !important;
@@ -163,6 +190,12 @@ input#searchsubmit:hover {
     height: 32px;
     width: 32px;
     text-decoration: none;
+}
+
+#scrollUp:hover{
+
+    background: #a7ce3b !important;
+
 }
 
 .icon-up-open:after {
