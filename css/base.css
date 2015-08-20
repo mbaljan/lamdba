@@ -213,14 +213,18 @@ input#searchsubmit:hover {
 }
 
 .icon-up-open:after {
-   font-family: 'Icons', Helvetica Neue, Sans-serif;
-    content: "\E002";
+   font-family: 'Icons', Helvetica Neue, Sans-serif !important;
+    content: "\E004" !important;
     font-style: normal;
     font-size: 15px;
     position: relative;
     bottom: 1px;
     right: 2px;
 }
+
+.icon-arrows-down:before {
+    font-family: "Icons" !important;
+    content: "\E001";
 
 @media (max-width: 1095px) {
 	.socialIcons .social-icons {
