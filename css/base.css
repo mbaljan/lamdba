@@ -7,7 +7,6 @@ max-width: 1200px;
 
 .section-overlay-layer {
     padding-bottom: 3em;
-    /*TODO: Change Spacings for smaller Devices*/
 }
 
 .socialIcons { 
@@ -226,8 +225,7 @@ input#searchsubmit:hover {
 
 .icon-arrows-down:before {
     font-family: "Icons" !important;
-    content: "\E001";
-    
+    content: "\E001"; 
 }
 
 @media (max-width: 1095px) {
@@ -313,7 +311,37 @@ input#searchsubmit:hover {
     float:none;
     margin: 0 1em 0 1em;
     }
-        
+    
+    .brief {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    }
+    
+    .brief-content-text {
+    clear: both;
+    margin-top: 40px;
+    text-align: left;
+    }
+    
+    .section-overlay-layer {
+    padding-bottom: 1em;
+    }
+    
+    .section-header {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    }
+    
+    .brief .section-overlay-layer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    }
+    
+    .contact-info .section-overlay-layer {
+    padding-top: 0em;
+    padding-bottom: 3em;
+    }
+    
 }
 
 @media (max-width: 580px) {
