@@ -1,3 +1,5 @@
+
+
 .container {
 width: 100%;
 max-width: 1200px;
@@ -5,7 +7,7 @@ max-width: 1200px;
 
 .section-overlay-layer {
     padding-bottom: 3em;
-    /*TODO: CHange Spacings for smaller Devices*/
+    /*TODO: Change Spacings for smaller Devices*/
 }
 
 .socialIcons { 
@@ -225,6 +227,8 @@ input#searchsubmit:hover {
 .icon-arrows-down:before {
     font-family: "Icons" !important;
     content: "\E001";
+    
+}
 
 @media (max-width: 1095px) {
 	.socialIcons .social-icons {
