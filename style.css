@@ -4287,7 +4287,7 @@ footer.footer .team-member-box .team-member {
 
 /* PRELOADER IMAGE BACKGROUND */
 .status {
-	background-image: url(images/loader-blue.gif);
+	background-image: url(images/spinner.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;

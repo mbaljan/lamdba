@@ -111,6 +111,19 @@ input#searchsubmit:hover {
  float: left;   
  margin: 0 0 0 4em;
 }
+
+.single-service {
+    padding: 2em 35px 40px 35px;
+    margin: 0px 0 30px 0;
+    background: #ffffff;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 4px solid #eaeaea;
+    border-radius: 3px;
+    -webkit-transition: all ease 0.55s;
+    transition: all ease 0.55s;
+}
         
 /* search form */
 .widget_search .screen-reader-text {
@@ -192,7 +205,8 @@ input#searchsubmit:hover {
 	position: absolute;
 	right: 11px;
 	top: 10px;
-	color: #949495;
+    height: 25px;
+    width: 25px;
 }
 
 #scrollUp {
@@ -210,23 +224,38 @@ input#searchsubmit:hover {
 
 #scrollUp:hover{
     background: #a7ce3b !important;
-
 }
 
 .icon-up-open:after {
-   font-family: 'Icons', Helvetica Neue, Sans-serif !important;
+     font-family: 'Icons', Helvetica Neue, Sans-serif !important;
     content: "\E004" !important;
     font-style: normal;
-    font-size: 15px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    color: #FFF;
+    line-height: 26px !important;
+    text-align: center;
     position: relative;
+    right: 1px;
     bottom: 1px;
-    right: 2px;
+    vertical-align: middle;
 }
 
 .icon-arrows-down:before {
     font-family: "Icons" !important;
     content: "\E001"; 
+    background: white;
+    color:#81a715;
 }
+
+.icon-arrows-up:before {
+    font-family: "Icons" !important;
+    content: "\E004"; 
+    background: white;
+    color:#81a715;
+}
+
 
 @media (max-width: 1095px) {
 	.socialIcons .social-icons {
@@ -251,6 +280,15 @@ input#searchsubmit:hover {
 }
 
 @media (max-width: 880px) {
+    
+    li.has_children {
+    width: 50%;
+    }
+    
+    .header .overlay-layer {
+    padding-top: 4em !important;
+    }
+    
     .navbar-header {
         float: none;
     }
@@ -294,6 +332,7 @@ input#searchsubmit:hover {
     margin: auto;
     background-color: white;
     border: none;
+    overflow: hidden;
     }
     
     .socialIcons {
@@ -342,6 +381,12 @@ input#searchsubmit:hover {
     padding-bottom: 3em;
     }
     
+    h1.intro {
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: left;
+    }
+    
 }
 
 @media (max-width: 580px) {
@@ -352,6 +397,12 @@ input#searchsubmit:hover {
     
     .header .overlay-layer {
     padding-top: 55px !important;
+    }
+    
+    h1.intro {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
     }
     
     media (min-width: 768px)
