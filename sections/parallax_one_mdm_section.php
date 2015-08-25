@@ -27,7 +27,7 @@
 
                 <div id="our_services_wrap" class="services-wrap services-wrap parallax_one_grid parallax_one_grid_sqZq7wjtIE">
 								
-				    <div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first ">
+				    <div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first mdmContainer">
                         
                         <div class="single-service border-bottom-hover mdm">
 
@@ -39,7 +39,7 @@
                         
                     </div>
                     
-                     <div class="parallax_one_grid_col_3 parallax_one_grid_column_2 ">
+                     <div class="parallax_one_grid_col_3 parallax_one_grid_column_2 mdmContainer">
                         
                         <div class="single-service border-bottom-hover mdm">
 
@@ -51,7 +51,7 @@
                         
                     </div>
                     
-                      <div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last ">
+                      <div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last mdmContainer">
                         
                         <div class="single-service border-bottom-hover mdm">
 

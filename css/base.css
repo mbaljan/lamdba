@@ -460,6 +460,14 @@ input#searchsubmit:hover {
     
 }
 
+@media (max-width: 765px) {
+    
+   .mdmContainer {
+    width: 100%;   
+   }
+    
+}
+
 @media (max-width: 580px) {
 
     #stamp-navigation {
@@ -484,4 +492,5 @@ input#searchsubmit:hover {
     
 }
     
+
 
