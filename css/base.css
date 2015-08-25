@@ -267,6 +267,28 @@ section#ribbon {
     min-height: 6em;
 }
 
+#footer_sitemap_widget li a {
+    border-bottom: none !important;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    color: rgba(49, 49, 49, 0.5);
+}
+
+.footer-widget-wrap .widget-box {
+    float: none;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+}
+
+footer.footer .widget {
+    margin-bottom: 2em;
+}
+
 .icon-up-open:after {
      font-family: 'Icons', Helvetica Neue, Sans-serif !important;
     content: "\E004" !important;
