@@ -15,45 +15,58 @@
 
                 <!-- SECTION HEADER -->
                 <div class="section-header">
-                    <?php
 
-
-							
-								echo '<h2 class="dark-text">MDM Seminare</h2><div class="colored-line"></div>';
+								<h2 class="dark-text">MDM Seminare</h2><div class="colored-line"></div>
 					
-								echo '<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>';
-							
+								<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>
 
-						?>
-
-                        <?php
-
-								echo '<div class="sub-heading">Test</div>';
+								<div class="sub-heading">Test</div>
 						
-								echo '<div class="sub-heading paralax_one_only_customizer"></div>';
-							
-						?>
+								<div class="sub-heading paralax_one_only_customizer"></div>
                 </div>
 
-
-                <?php
-						
-							echo '<div id="our_services_wrap" class="services-wrap">';
+                <div id="our_services_wrap" class="services-wrap services-wrap parallax_one_grid parallax_one_grid_sqZq7wjtIE">
 								
-										echo '<div class="service-box"><div class="single-service border-bottom-hover">';
+				    <div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first ">
+                        
+                        <div class="single-service border-bottom-hover mdm">
 
-
-												echo '<h3 class="colored-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>';
+                        <h3 class="colored-text mdm">MDM Seminar</h3>
 										
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+											
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="parallax_one_grid_col_3 parallax_one_grid_column_2 ">
+                        
+                        <div class="single-service border-bottom-hover mdm">
 
+                        <h3 class="colored-text mdm">MDM Seminar</h3>
+										
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 											
-												echo '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>';
+                        </div>
+                        
+                    </div>
+                    
+                      <div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last ">
+                        
+                        <div class="single-service border-bottom-hover mdm">
+
+                        <h3 class="colored-text mdm">MDM Seminar</h3>
+										
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 											
-										echo '</div></div>';
-								
-							echo '</div>';
-						
-					?>
+                        </div>
+                        
+                    </div>
+		
+                </div>
+
             </div>
+            
         </div>
+        
     </section>

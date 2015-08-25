@@ -19,8 +19,41 @@ max-width: 1200px;
     float: left;
 }
 
+.social-icons li a:hover .transparent-text-dark {
+    color: #81a715;
+}
+
 .socialIcons .social-icons {
     margin:10px 0 0 4em;
+}
+
+.icon-social-blogger:before {
+    font-family: "Icons" !important;
+    content: "\E005";
+}
+
+#cd-google-map {
+    position: relative;
+    -webkit-transition: all ease 0.55s;
+    transition: all ease 0.55s;
+    width: 50%;
+    margin: auto;
+}
+
+.single-service.border-bottom-hover.mdm {
+    padding: 1em 35px 1em 35px;
+}
+
+h3.colored-text.mdm {
+    margin-bottom: 1em;
+}
+
+.services-wrap.mdm {
+padding: 0 0 0 0;
+}
+
+div.mdm p {
+text-align: left;
 }
 
 .clientHeadline {
@@ -224,6 +257,14 @@ input#searchsubmit:hover {
 
 #scrollUp:hover{
     background: #a7ce3b !important;
+}
+
+section#ribbon {
+    background-image: url(../images/background-images/parallax-img/parallax-img1.jpg);
+}
+
+.container.imageSpacer {
+    min-height: 6em;
 }
 
 .icon-up-open:after {
