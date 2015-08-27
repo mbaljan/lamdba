@@ -36,6 +36,10 @@
 	content: "\E004";
 }
 
-.icon-social-xing:before {
+.icon-bulletpoint:before {
 	content: "\E005";
+}
+
+.icon-social-xing:before {
+	content: "\E006";
 }

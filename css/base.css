@@ -15,6 +15,11 @@ width: 100%;
 max-width: 1200px;
 }
 
+#primary {
+    margin: 6.5em 0;
+    padding-right: 15px;
+}
+
 .socialIcons { 
     float: left;
     position: relative;
@@ -149,6 +154,13 @@ section#ribbon {
 
 .container.imageSpacer {
     min-height: 6em;
+}
+
+
+/*NOTE Content Styling*/
+
+.entry-content.content-page ul{
+list-style: none;
 }
 
 
@@ -322,8 +334,31 @@ input#searchsubmit:hover {
 
 .icon-social-blogger:before {
     font-family: "Icons" !important;
-    content: "\E005";
+    content: "\E006";
 }
+
+.icon-arrow-carrot-down:before {
+    font-family: "Icons" !important;
+    content: "\E001" ;
+    font-size: 0.4em;
+}
+
+.icon-arrow-carrot-up:before {
+    font-family: "Icons" !important;
+    content: "\E004";
+    font-size: 0.4em;
+}
+
+.entry-content.content-page li:before {
+    font-family: "Icons";
+    content: "\E005";
+    color: #81a715; 
+    font-size: .2em;
+    position: relative;
+    right: 5.5em;
+    bottom: 2.1em;
+}
+
 
 
 /*NOTE Media Queries*/
