@@ -530,9 +530,11 @@ input#searchsubmit:hover {
     .controls-wrap {
     text-align: center;
     padding: 0 0 0 3em;
-    /* width: 100%; */
-    /* margin: auto; */
-}
+    }
+    
+    .timeline-section li .info {
+    border-left: none;
+    }
 }
 
 @media (max-width: 764px) {
