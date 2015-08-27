@@ -156,11 +156,37 @@ section#ribbon {
     min-height: 6em;
 }
 
+.feedback p {
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
 
 /*NOTE Content Styling*/
 
 .entry-content.content-page ul{
 list-style: none;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #81a715;
+}
+
+.entry-content.content-page img{
+border: solid 2px #81a715;
+padding: .4em;
+}
+
+.entry-content, .entry-content p, .entry-content span {
+    font-weight: 300;
+    color: #313131;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 
@@ -334,7 +360,7 @@ input#searchsubmit:hover {
 
 .icon-social-blogger:before {
     font-family: "Icons" !important;
-    content: "\E006";
+    content: "\E007";
 }
 
 .icon-arrow-carrot-down:before {
@@ -349,16 +375,24 @@ input#searchsubmit:hover {
     font-size: 0.4em;
 }
 
-.entry-content.content-page li:before {
+.entry-content.content-page ul li:before {
     font-family: "Icons";
     content: "\E005";
+    color: #81a715;
+    font-size: .7em;
+    position: relative;
+    right: 1em;
+}
+
+.entry-content.content-page ul li ul li:before {
+    font-family: "Icons";
+    content: "\E006";
     color: #81a715; 
     font-size: .2em;
     position: relative;
     right: 5.5em;
     bottom: 2.1em;
 }
-
 
 
 /*NOTE Media Queries*/

@@ -89,7 +89,7 @@
 														</header>
 														<div class="entry-content">
 															<?php the_excerpt(); ?>
-															<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="read-more"><?php esc_html_e('Read more','parallax-one'); ?></a>
+															<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="read-more"><?php esc_html_e('Weiterlesen','parallax-one'); ?></a>
 														</div>
 													</div>
 												</div>
