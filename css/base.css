@@ -17,6 +17,29 @@ a:hover {
     color: #a7ce3b;
 }
 
+.timeline-box-wrap .read-more {
+    font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.read-more:after {
+    font-family: "Icons" !important;
+    content: "\E003"; 
+    font-size: 0.7em;
+    position: relative;
+    left: 6px;
+}
+
+.entry-date {
+ font-weight: 300;   
+}
+
+.byline {
+ font-weight: 300;   
+}
+
 /*NOTE General Layout*/
 
 .container {
