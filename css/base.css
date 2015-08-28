@@ -16,6 +16,7 @@ h1.single-title {
     color: #81a715;
     margin-top: 35px;
     margin-bottom: 20px;
+    clear: both;
 }
 
 .entry-content h3 {
@@ -25,6 +26,7 @@ h1.single-title {
     color: #81a715;
     margin-top: 35px;
     margin-bottom: 20px;
+    clear: both;
 }
 
 .colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line {
@@ -76,6 +78,7 @@ a.read-more:hover {
 .span.author.vcard a {
     font-weight: 300;
 }
+
 
 /*NOTE General Layout*/
 
@@ -268,6 +271,11 @@ padding: .4em;
     line-height: 26px;
 }
 
+.entry-content.content-page figure {
+    float: left;
+    margin: 0 1.1em 1em 0;
+     
+}
 
 /*NOTE Forms and Buttons*/
 
@@ -444,7 +452,7 @@ nav.navigation.post-navigation {
 
 .icon-social-blogger:before {
     font-family: "Icons" !important;
-    content: "\E007";
+    content: "\E008";
 }
 
 .icon-arrow-carrot-down:before {
@@ -476,6 +484,15 @@ nav.navigation.post-navigation {
     position: relative;
     right: 5.5em;
     bottom: 2.1em;
+}
+
+.single-service.border-bottom-hover.mdm h3:before {
+    font-family: "Icons";
+    content: "\E007";
+    color: #81a715;
+    position: relative;
+    right: .4em;
+    top: .1em;
 }
 
 
