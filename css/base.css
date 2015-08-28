@@ -65,12 +65,16 @@ a:hover {
     left: 6px;
 }
 
+a.read-more:hover {
+    text-decoration: none;
+}
+
 .entry-date {
  font-weight: 300;   
 }
 
-.byline {
- font-weight: 300;   
+.span.author.vcard a {
+    font-weight: 300;
 }
 
 /*NOTE General Layout*/
@@ -376,6 +380,7 @@ input#searchsubmit:hover {
     background: #a7ce3b !important;
 }
 
+/*TODO: Temporary solution*/
 nav.navigation.post-navigation {
     display: none;
 }

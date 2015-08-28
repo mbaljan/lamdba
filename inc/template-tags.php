@@ -87,7 +87,7 @@ function parallax_one_posted_on() {
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'parallax-one' ),
+		_x( 'von %s', 'post author', 'parallax-one' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
