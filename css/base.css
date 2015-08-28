@@ -1,5 +1,38 @@
 
 /*NOTE Fonts and Links*/
+
+h1.single-title {
+    font-size: 1.7em;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #81a715;
+    margin-top: 0;
+}
+
+.entry-content h2 {
+    font-size: 1.4em;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #81a715;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.entry-content h3 {
+    font-size: 1.1em;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #81a715;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.colored-line-left, .colored-line-right, .colored-line, .white-line, .grey-line {
+    height: 2px;
+    width: 25%;
+    display: block;
+}
+
  .clientHeadline h2 { 
     margin-top: 90px;
 }
@@ -341,6 +374,10 @@ input#searchsubmit:hover {
 
 #scrollUp:hover{
     background: #a7ce3b !important;
+}
+
+nav.navigation.post-navigation {
+    display: none;
 }
 
 
