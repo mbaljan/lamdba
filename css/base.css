@@ -311,7 +311,7 @@
 
     }
 
-       /*TODO: Temporary solution for Post Navigation*/
+       /*TODO: Temporary solution for disabling Post Navigation*/
     nav.navigation.post-navigation {
         display: none;
     }
