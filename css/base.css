@@ -1,5 +1,6 @@
-
-    /*NOTE Fonts and Links*/
+/*---------------------------------------
+   1 Fonts and Links Styling
+-----------------------------------------*/
 
     h1.single-title {
         font-size: 1.7em;
@@ -80,7 +81,9 @@
         font-weight: 300;
     }
 
-    /*NOTE General Layout*/
+/*---------------------------------------
+   2 Layout Styling
+-----------------------------------------*/
 
     .container {
     width: 100%;
@@ -160,37 +163,9 @@
     width: auto;
     }
 
-    /*NOTE Navigation*/
-
-    .sticky-navigation .main-navigation ul .dropdownmenu, .dropdownmenu {
-        color: #81a715;
-        font-weight: 600;
-    }
-
-    navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background-color: #FFF;
-    }
-
-    .navbar-inverse .navbar-toggle {
-    border-color: #fff;
-    }
-
-    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background-color: #fff;
-        box-shadow: none;
-    }
-
-    .sticky-navigation-open .sticky-navigation {
-        top: 0px;
-        opacity: 1;
-        height: 115px;
-        border-bottom: solid 3px #81a715;
-        border-top: solid 3px #81a715;
-        border-radius: 3px;
-        padding: 0 1em 0 1em;
-    }
-
-    /*NOTE Sections*/
+/*---------------------------------------
+   2.1 Section Layout Styling
+-----------------------------------------*/
 
     .services-wrap.mdm {
     padding: 0 0 0 0;
@@ -271,7 +246,41 @@
     background: rgba(0,0,0,0.5);
     }
 
-    /* Content Styling*/
+/*---------------------------------------
+   3 Navigation Styling
+-----------------------------------------*/
+
+    .sticky-navigation .main-navigation ul .dropdownmenu, .dropdownmenu {
+        color: #81a715;
+        font-weight: 600;
+    }
+
+    navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: #FFF;
+    }
+
+    .navbar-inverse .navbar-toggle {
+    border-color: #fff;
+    }
+
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .sticky-navigation-open .sticky-navigation {
+        top: 0px;
+        opacity: 1;
+        height: 115px;
+        border-bottom: solid 3px #81a715;
+        border-top: solid 3px #81a715;
+        border-radius: 3px;
+        padding: 0 1em 0 1em;
+    }
+
+/*---------------------------------------
+   4 Content Styling
+-----------------------------------------*/
 
     .entry-content.content-page ul{
     list-style: none;
@@ -302,7 +311,14 @@
 
     }
 
-    /*NOTE Forms and Buttons*/
+       /*TODO: Temporary solution for Post Navigation*/
+    nav.navigation.post-navigation {
+        display: none;
+    }
+
+/*---------------------------------------
+   5 Button Styling
+-----------------------------------------*/
 
     input#searchsubmit {
         position: relative;
@@ -413,12 +429,9 @@
         background: #a7ce3b !important;
     }
 
-    /*TODO: Temporary solution*/
-    nav.navigation.post-navigation {
-        display: none;
-    }
-
-    /*NOTE Icon related Stuff*/
+/*---------------------------------------
+   6 Icon Styling
+-----------------------------------------*/
 
     .icon-arrows-down:before {
         font-family: "Icons" !important;
@@ -529,7 +542,9 @@
         top: 1px;
     }
 
-    /*NOTE Media Queries*/
+/*---------------------------------------
+   7 Media Queries
+-----------------------------------------*/
 
     @media (max-width: 1095px) {
     	.socialIcons .social-icons {
