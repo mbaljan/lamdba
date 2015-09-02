@@ -238,7 +238,7 @@
     }
 
     .container.imageSpacer {
-        min-height: 15em;
+        min-height: 22em;
     }
 
     .feedback p {
@@ -258,7 +258,20 @@
     background-color: rgba(0, 0, 0, 0.35);
     }
 
-    /*NOTE Content Styling*/
+    .single-service.border-bottom-hover:hover {
+    border-bottom: 4px solid #81a715;
+    }
+
+    .team-member:hover .member-details {
+    bottom: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: rgba(0,0,0,0.5);
+    }
+
+    /* Content Styling*/
 
     .entry-content.content-page ul{
     list-style: none;
