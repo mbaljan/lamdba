@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg width="100%" height="100%" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+        <g id="1" transform="matrix(0.0979759,0,0,0.0979759,-4.81928,-25.59)">
+
+           <path d="M289.188,376.378l-45.671,78.104l45.671,79.428l44.722,-78.964l-44.722,-78.568Z" style="fill:rgb(178,209,113);fill-rule:nonzero; opacity:0" >
+
+            <animate id="first"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 fill="freeze"
+                 begin="0s;rev_last.end" />
+
+            <animate id="rev_first"
+                 attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 fill="freeze"
+                 begin="last.end" />
+            </path>
+
+        </g>
+        <g id="2" transform="matrix(0.0979759,0,0,0.0979759,-4.81928,-25.59)">
+            <path d="M289.188,533.91l-91.473,0l45.802,-79.429l45.671,79.429Z" style="fill:rgb(137,190,87);fill-rule:nonzero;opacity:0" >
+
+            <animate id="second"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 fill="freeze"
+                 begin="first.end" />
+
+            <animate id="rev_second"
+                 attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 fill="freeze"
+                 begin="rev_first.end" />
+            </path>
+
+        </g>
+        <g id="3" transform="matrix(0.0979759,0,0,0.0979759,-4.81928,-25.59)">
+            <path d="M243.517,454.481l-45.802,-78.168l-45.398,78.633l45.398,78.632l45.802,-79.097Z" style="fill:rgb(106,173,90);fill-rule:nonzero;opacity:0" >
+
+            <animate id="third"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 fill="freeze"
+                 begin="second.end" />
+
+            <animate id="rev_third"
+                 attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 fill="freeze"
+                 begin="rev_second.end" />
+            </path>
+
+        </g>
+        <g id="4" transform="matrix(0.0979759,0,0,0.0979759,-4.81928,-25.59)">
+            <path d="M289.188,376.378l-91.473,0l45.802,78.104l45.671,-78.104Z" style="fill:rgb(137,190,87);fill-rule:nonzero;opacity:0" >
+
+            <animate id="last"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 fill="freeze"
+                 begin="third.end" />
+
+
+            <animate id="rev_last"
+                 attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 fill="freeze"
+                 begin="rev_third.end" />
+            </path>
+
+        </g>
+    </svg>
