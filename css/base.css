@@ -266,6 +266,12 @@
        3 Navigation Styling
     -----------------------------------------*/
 
+.sticky-navigation-open .sticky-navigation {
+    top: 0px;
+    opacity: 1;
+    border-bottom: solid 2px #81a715;
+}
+
     .container>.navbar-header {
         margin-left: 0;
         margin-right: 0;
@@ -768,7 +774,42 @@
         }
     }
 
-    @media (max-width: 880px) {
+    @media (max-width: 850px) {
+        .sticky-navigation .main-navigation li a {
+            line-height: inherit;
+            padding: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+.sticky-navigation .main-navigation li {
+    float: none;
+    position: relative;
+}
+
+.sticky-navigation .main-navigation > li.has_children > a {
+    line-height: 34px;
+    line-height: 18px;
+    padding: none;
+}
+
+.sticky-navigation .main-navigation ul .dropdownmenu, .dropdownmenu {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 0;
+    background: #fff;
+}
+
         li.has_children {
             width: 50%;
         }
@@ -819,6 +860,7 @@
             border: none;
             overflow: hidden !important;
             float: right;
+            padding: 0 0 1em 0;
         }
         .socialIcons {
             float: none;
@@ -878,9 +920,7 @@
     }
 
     @media (max-width: 580px) {
-        #stamp-navigation {
-            top: 3.2em;
-        }
+
         .header .overlay-layer {
             padding-top: 55px !important;
         }
