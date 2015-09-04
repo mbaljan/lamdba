@@ -4,7 +4,7 @@ Theme URI:
 Author: Martin Baljan
 Author URI:
 Description: Wordpress Theme für Bayard Consulting Relaunch
-Version: Alpha 0.1
+Version: 0.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:
@@ -76,7 +76,6 @@ Tags:
 @import url(//fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:400,300,600);
 
 
-
 /*---------------------------------------
    1.1 GENERAL STYLES
 -----------------------------------------*/
@@ -92,7 +91,7 @@ body {
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
-	color: #424242;
+	color: #313131;
 	text-align: left;
 	overflow-x: hidden !important;
 	margin: auto !important;
@@ -115,8 +114,8 @@ body {
 }
 
 .status {
-	width: 128px;
-	height: 128px;
+	width: 40px;
+	height: 40px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -253,7 +252,7 @@ h5 {
 h1.intro {
 	font-size: 3.75rem;
 	line-height: 5rem;
-	text-align: left;
+	text-align: center;
 }
 
 h1.single-title {
@@ -453,7 +452,7 @@ blockquote {
 
 .entry-content blockquote p{
 	font-weight: 300;
-	color: #424242;
+	color: #313131;
 }
 
 address {
@@ -674,8 +673,8 @@ big {
    2.6 SECTION HEADERS
 -----------------------------------------*/
 .section-header {
-	margin-top: 4em;
-	margin-bottom: 4em;
+	margin-top: 90px;
+	margin-bottom: 60px;
 	text-align: center;
 }
 
@@ -912,9 +911,7 @@ h2.site-description {
 
 /* STICKY NAVIGATION AND LOGO */
 #stamp-navigation {
-
-    position: relative;
-    top: 30px;
+	float: right;
 }
 
 .appear-on-scroll {
@@ -928,7 +925,7 @@ header .navbar-brand {
 }
 
 .navbar-brand > img {
-	max-height: 85px;
+	max-height: 56px;
 	display: inline-block;
 }
 
@@ -966,7 +963,7 @@ header .navbar-brand {
 	display: block;
 	text-decoration: none;
 	text-align: left;
-	color: #424242;
+	color: #313131;
 }
 
 .sticky-navigation .main-navigation ul {
@@ -1034,12 +1031,6 @@ header .navbar-brand {
 .sticky-navigation-open .sticky-navigation {
 	top: 0px;
 	opacity: 1;
-    height: 115px;
-    border-bottom: solid 3px #81a715;
-    border-top: solid 3px #81a715;
-    border-radius: 3px;
-
-
 }
 
 .admin-bar .sticky-navigation-open .sticky-navigation {
@@ -1059,7 +1050,7 @@ header .navbar-brand {
 .menu-align-center .navbar-header,
 .menu-align-center .navbar-collapse {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 }
 
 .menu-align-center .navbar-header > a {
@@ -1110,8 +1101,6 @@ header .navbar-brand {
 .navbar-toggle {
 	margin-right: 5px;
 	padding: 13px 10px;
-        position: relative;
-    top:30px;
 }
 
 /* ONLY LOGO */
@@ -1170,7 +1159,7 @@ header .navbar-brand {
     margin-top: 30px;
     margin-bottom: 40px;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
 	font-size: 18px;
 	line-height: 28px;
 }
@@ -1313,7 +1302,7 @@ header .navbar-brand {
 }
 
 .services {
-	background-color: white;
+	background-color: #F7F8FA;
 	border-bottom: 1px solid #eaebec;
 }
 
@@ -1322,7 +1311,6 @@ header .navbar-brand {
 
 .single-service {
 	padding: 40px 35px 40px 35px;
-    margin:0px 0 30px 0;
 	background: #ffffff;
 	border-top: 1px solid #eaeaea;
 	border-left: 1px solid #eaeaea;
@@ -1426,8 +1414,8 @@ header .navbar-brand {
 }
 
 .brief .section-overlay-layer {
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 80px;
+	padding-bottom: 115px;
 }
 
 .brief .content-section {
@@ -1926,7 +1914,7 @@ header .navbar-brand {
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 300;
-	color: #424242;
+	color: #313131;
 	margin-bottom: 5px;
 }
 
@@ -2067,6 +2055,8 @@ a.control_next.fade-btn {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	border: 1px solid #e4e7e7;
+	border-bottom: 4px solid #e4e7e7;
 	min-height: 100px;
 }
 
@@ -2156,7 +2146,7 @@ a.control_next.fade-btn {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	background: rgba(0,0,0,0.1);
+	background: rgba(0,0,0,0.7);
 }
 
 /*---------------------------------------
@@ -2184,14 +2174,14 @@ a.control_next.fade-btn {
 }
 
 .feedback .pic-container-inner {
-	-webkit-border-radius: 3%;
-	-moz-border-radius: 3%;
-	border-radius: 3%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
     display: inline-block;
     overflow: hidden;
     width: 81px;
     height: 81px;
-    border: 1px solid #FFF;
+    border: 3px solid #FFF;
     background-clip: padding-box;
     box-shadow: 0px 0px 0px 1px #81a715;
     background-color: #FAFAFA;
@@ -2205,7 +2195,6 @@ a.control_next.fade-btn {
 	font-style: italic;
 	margin-top: 20px;
 	margin-bottom: 0;
-    text-align: left;
 }
 
 .feedback h5 {
@@ -2287,6 +2276,7 @@ a.control_next.fade-btn {
 .call-to-action .section-overlay-layer {
 	padding-top: 100px;
 	padding-bottom: 100px;
+	background: rgba(0, 5, 8, 0.80);
 }
 
 .call-to-action h2 {
@@ -2294,7 +2284,6 @@ a.control_next.fade-btn {
 	margin-bottom: 50px;
 	font-size: 2.4rem;
 	line-height: 3.125rem;
-    text-align: left;
 }
 
 .modal-content {
@@ -2319,8 +2308,8 @@ a.control_next.fade-btn {
 }
 
 .contact-info .section-overlay-layer {
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 30px;
+	padding-bottom: 70px;
 }
 
 .contact-info .logo-container {
@@ -3585,7 +3574,7 @@ div.wpcf7-mail-sent-ng {
     font-size: 16px;
     line-height: 53px;
     font-weight: 400;
-    color: #424242;
+    color: #313131;
 }
 
 .woocommerce div.product form.cart .variations select {
@@ -4051,7 +4040,7 @@ ul.social-icons {
 }
 
 .social-icons li a:hover .transparent-text-dark {
-	color: #424242;
+	color: #313131;
 }
 
 .footer-widget-wrap {
@@ -4287,16 +4276,16 @@ footer.footer .team-member-box .team-member {
 
 /* PRELOADER IMAGE BACKGROUND */
 .status {
-	background-image: url(images/spinner.svg);
+	background-image: url(images/loader-blue.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
-	background-size: 128px 128px;
+	background-size: cover;
 }
 
 /* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
 .overlay-layer-wrap {
-	background: rgba(0, 5, 8, 0.4);
+	background: rgba(0, 5, 8, 0.6);
 }
 
 .overlay-layer-2 {
@@ -4318,7 +4307,7 @@ a:hover {
 }
 
 .border-bottom-hover:hover {
-
+	border-bottom-color: #81a715;
 }
 
 .sticky-navigation .main-navigation li a:hover,
@@ -4566,7 +4555,7 @@ a:hover {
 	position: absolute;
 	left: 0;
 	top: 1px;
-	color: #424242;
+	color: #313131;
 }
 
 .post-author {
@@ -5572,7 +5561,7 @@ h2.screen-reader-text {
 /*---------------------------------------
    6.6 FIXES FOR <= 768PX SCREENS
 -----------------------------------------*/
-@media (max-width: 880px) {
+@media (max-width: 767px) {
 
 	html {
 		font-size: 80%;
@@ -5765,6 +5754,7 @@ h2.screen-reader-text {
 	}
 
 	#stamp-navigation {
+		float: none;
 		width: 100%;
 		margin: 0;
 	}
