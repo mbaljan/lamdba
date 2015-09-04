@@ -791,13 +791,15 @@
             display: block !important;
         }
         #stamp-navigation {
-            width: 100%;
-            position: relative;
-            top: 2.8em;
-            margin: auto;
-            background-color: white;
-            border: none;
-            overflow: hidden;
+        width: 100%;
+        position: relative;
+        top: 100%;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        border: none;
+        overflow: hidden !important;
+    float: right;
         }
         .socialIcons {
             float: none;

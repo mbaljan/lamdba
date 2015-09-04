@@ -20,29 +20,29 @@
 <body <?php body_class(); ?>>
 
 	<!-- =========================
-     PRE LOADER       
+     PRE LOADER
     ============================== -->
 	<?php
-		
+
 	 global $wp_customize;
 
-	 if(is_front_page() && !isset( $wp_customize ) && get_option( 'show_on_front' ) != 'page' ): 
-	 
+	 if(is_front_page() && !isset( $wp_customize ) && get_option( 'show_on_front' ) != 'page' ):
+
 		$parallax_one_disable_preloader = get_theme_mod('paralax_one_disable_preloader');
-		
+
 		if( isset($parallax_one_disable_preloader) && ($parallax_one_disable_preloader != 1)):
-			 
+
 			echo '<div class="preloader">';
 				echo '<div class="status">&nbsp;</div>';
 			echo '</div>';
-			
-		endif;	
+
+		endif;
 
 	endif; ?>
 
 
 	<!-- =========================
-     SECTION: HOME / HEADER  
+     SECTION: HOME / HEADER
     ============================== -->
 	<header class="header header-style-one" data-stellar-background-ratio="0.5" id="home">
 
@@ -72,9 +72,9 @@
             <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation appear-on-scroll" role="navigation">
 				<!-- CONTAINER -->
                 <div class="container">
-				
+
                     <div class="navbar-header">
-                        
+
                         <!-- LOGO ON STICKY NAV BAR -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#stamp-navigation">
                             <span class="sr-only"><?php esc_html_e('Toggle navigation','parallax-one'); ?></span>
@@ -82,15 +82,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                     
+
                         <!-- LOGO -->
-						
+
 						<?php
-							
+
 							$parallax_one = get_theme_mod('paralax_one_logo', parallax_get_file('/images/logo-nav.png') );
 
-							
-							
+
+
 							if(!empty($parallax_one)):
 
 								echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand" title="'.get_bloginfo('title').'">';
@@ -102,44 +102,44 @@
 								echo '<div class="header-logo-wrap paralax_one_only_customizer">';
 
 									echo "<h1 class='site-title'><a href='".esc_url( home_url( '/' ) )."' title='".esc_attr( get_bloginfo( 'name', 'display' ) )."' rel='home'>".get_bloginfo( 'name' )."</a></h1>";
-								
+
 									echo "<h2 class='site-description'>".get_bloginfo( 'description' )."</h2>";
 
-								echo '</div>';	
-							
+								echo '</div>';
+
 							else:
-							
+
 								if( isset( $wp_customize ) ):
-								
+
 									echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand paralax_one_only_customizer" title="'.get_bloginfo('title').'">';
 
 										echo '<img src="" alt="'.get_bloginfo('title').'">';
 
 									echo '</a>';
-								
+
 								endif;
-							
+
 								echo '<div class="header-logo-wrap">';
 
 									echo "<h1 class='site-title'><a href='".esc_url( home_url( '/' ) )."' title='".esc_attr( get_bloginfo( 'name', 'display' ) )."' rel='home'>".get_bloginfo( 'name' )."</a></h1>";
-								
+
 									echo "<h2 class='site-description'>".get_bloginfo( 'description' )."</h2>";
 
-								echo '</div>';							
-							endif;	
+								echo '</div>';
+							endif;
 
 						?>
 
                     </div>
-                    
+
                     <!-- MENU -->
-                    <div class="navbar-collapse collapse" id="stamp-navigation">		
-    					<?php 
-    						wp_nav_menu( 
-                                array( 
+                    <div class="navbar-collapse collapse" id="stamp-navigation">
+    					<?php
+    						wp_nav_menu(
+                                array(
                                     'theme_location'    => 'primary',
                                     'container'         => false,
-                                    'menu_class'        => 'nav navbar-nav main-navigation small-text', 
+                                    'menu_class'        => 'nav navbar-nav main-navigation small-text',
                                     'fallback_cb'       => 'parallax_one_wp_page_menu' ) );
     					?>
                             <div class="socialIcons">
@@ -149,8 +149,8 @@
 
 
                         /* OPTIONAL FOOTER LINKS */
-                        wp_nav_menu( 
-                            array( 
+                        wp_nav_menu(
+                            array(
                                 'theme_location'    => 'parallax_footer_menu',
                                 'container'         => false,
                                 'menu_class'        => 'footer-links small-text',

@@ -912,7 +912,7 @@ h2.site-description {
 
 /* STICKY NAVIGATION AND LOGO */
 #stamp-navigation {
-	float: right;
+
     position: relative;
     top: 30px;
 }
