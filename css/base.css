@@ -791,7 +791,6 @@
             display: block !important;
         }
         #stamp-navigation {
-            float: none;
             width: 100%;
             position: relative;
             top: 2.8em;
