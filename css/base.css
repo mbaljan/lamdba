@@ -1,7 +1,4 @@
 /*---------------------------------------
-       0 Variables
-    -----------------------------------------*/
-/*---------------------------------------
        1 Fonts and Links Styling
     -----------------------------------------*/
 h1.single-title {
@@ -58,7 +55,7 @@ a:hover {
   font-weight: 400;
 }
 .read-more:after {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E003";
   font-size: 0.7em;
   position: relative;
@@ -103,6 +100,8 @@ a.read-more:hover {
   background-color: #81a715;
   border: solid 1px #81a715;
   padding: 0.2em 0.3em 0.2em 0.3em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   color: #fff;
 }
@@ -144,6 +143,11 @@ footer.footer .widget {
 /*---------------------------------------
        2.1 Section Layout Styling
     -----------------------------------------*/
+.feedback .pic-container-inner {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 .services-wrap.mdm {
   padding: 0 0 0 0;
 }
@@ -173,6 +177,8 @@ div.mdm p {
   border-left: 1px solid #eaeaea;
   border-right: 1px solid #eaeaea;
   border-bottom: 4px solid #eaeaea;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: all ease 0.55s;
   transition: all ease 0.55s;
@@ -209,7 +215,9 @@ section#ribbon {
   background: rgba(0,0,0,0.5);
 }
 .timeline-box-wrap .icon-container {
-  border-radius: 3%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: inline-block;
   overflow: hidden;
   border: 1px solid #fff;
@@ -264,6 +272,8 @@ navbar-inverse .navbar-toggle:hover,
   height: 115px;
   border-bottom: solid 3px #81a715;
   border-top: solid 3px #81a715;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 0 1em 0 1em;
 }
@@ -299,7 +309,9 @@ blockquote {
 #rpwwt-recent-posts-widget-with-thumbnails-2 img {
   width: 75px;
   height: 75px;
-  border-radius: 3% !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: inline-block;
   overflow: hidden;
   border: 1px solid #fff;
@@ -328,10 +340,12 @@ nav.navigation.post-navigation {
 #rpwwt-recent-posts-widget-with-thumbnails-2 img {
   width: 75px;
   height: 75px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   border-radius: 100%;
 }
 a.synved-social-button.synved-social-button-share.synved-social-size-32.synved-social-resolution-single.synved-social-provider-facebook.nolightbox {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E004";
 }
 /*---------------------------------------
@@ -366,17 +380,18 @@ span.wpcf7-not-valid-tip {
   color: #f30a0a;
 }
 span.wpcf7-not-valid-tip:before {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E004";
   padding: 0 0.5em 0 0.3em;
 }
 div.wpcf7-validation-errors,
 div.wpcf7-mail-sent-ng {
   border: solid 1px #f00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fff;
   color: #f00;
-  border-radius: 3px;
   text-align: left;
   padding: 0.3em;
   font-size: 0.8em;
@@ -390,10 +405,9 @@ input#searchsubmit {
   outline: none;
   cursor: pointer;
   border: 1px solid #81a715;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   padding: 0.7em;
   margin: 1em;
   font-size: 0.9em;
@@ -462,6 +476,8 @@ input#searchsubmit:hover {
   background-image: none;
   background-size: contain;
   border: solid 2px #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   box-shadow: none;
 }
@@ -473,6 +489,8 @@ input#searchsubmit:hover {
   bottom: 20px;
   background: #81a715 !important;
   opacity: 0.9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: background 300ms linear;
   transition: background 300ms linear;
@@ -559,7 +577,7 @@ input[type="submit"]:active {
        6 Icon Styling
     -----------------------------------------*/
 .icon-arrows-down:before {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E001";
   background: #fff;
   color: #81a715;
@@ -580,49 +598,31 @@ input[type="submit"]:active {
   vertical-align: middle;
 }
 .icon-arrows-up:before {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E004";
   background: #fff;
   color: #81a715;
 }
-.widget_search.search-form:before {
-  content: "\e0a6";
-  font-family: "stamp-icons" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 25px;
-  position: absolute;
-  right: 11px;
-  top: 10px;
-  height: 25px;
-  width: 25px;
-}
 .icon-arrows-down:before {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E001";
 }
 .icon-social-blogger:before {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E008";
 }
 .icon-arrow-carrot-down:before {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E001";
   font-size: 0.4em;
 }
 .icon-arrow-carrot-up:before {
-  font-family: "Icons" !important;
+  font-family: 'Icons' !important;
   content: "\E004";
   font-size: 0.4em;
 }
 .entry-content.content-page ul li:before {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E005";
   color: #81a715;
   font-size: 0.7em;
@@ -630,7 +630,7 @@ input[type="submit"]:active {
   right: 1em;
 }
 .entry-content.content-page ul li ul li:before {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E006";
   color: #81a715;
   font-size: 0.2em;
@@ -639,7 +639,7 @@ input[type="submit"]:active {
   bottom: 2.1em;
 }
 .single-service.border-bottom-hover.mdm h3:before {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E007";
   color: #81a715;
   position: relative;
@@ -648,7 +648,7 @@ input[type="submit"]:active {
   font-size: 0.9em;
 }
 .standard-button:after {
-  font-family: "Icons";
+  font-family: 'Icons';
   content: "\E003";
   font-size: 0.9em;
   padding: 0em 0 0 1em;
@@ -704,9 +704,9 @@ input[type="submit"]:active {
     height: 25px;
     margin: 0;
     padding: 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     background: #fff;
   }
   li.has_children {

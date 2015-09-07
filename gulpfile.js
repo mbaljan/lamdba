@@ -7,6 +7,7 @@ var consolidate = require('gulp-consolidate');
 var iconfontCss = require('gulp-iconfont-css');
 var fontName = 'Icons';
 var stylus = require('gulp-stylus');
+var stylusFile = ['./**/*.styl'];
 
 gulp.task('iconfont', function() {
     gulp.src(['./iconfont/*.svg'])
@@ -30,8 +31,8 @@ gulp.task('watch', function() {
             .pipe(livereload({
                 start: true
             }))
-        console.log('Test');
-    })
+    });
+    gulp.watch(stylusFile, ['render']);
 });
 
 gulp.task('render', function () {

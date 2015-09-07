@@ -1,8 +1,12 @@
-    /*---------------------------------------
-       0 Variables
-    -----------------------------------------*/
+baseGreen = #81A715;
+lighterGreen = #a7ce3b;
+iconFont = 'Icons'
 
-basisGreen = #81A715
+border-radius() {
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+  }
 
     /*---------------------------------------
        1 Fonts and Links Styling
@@ -12,7 +16,7 @@ basisGreen = #81A715
         font-size: 1.7em;
         line-height: 28px;
         text-transform: uppercase;
-        color: basisGreen;
+        color: baseGreen;
         margin-top: 0;
     }
 
@@ -20,7 +24,7 @@ basisGreen = #81A715
         font-size: 1.4em;
         line-height: 28px;
         text-transform: uppercase;
-        color: basisGreen;
+        color: baseGreen;
         margin-top: 35px;
         margin-bottom: 20px;
         clear: both;
@@ -30,7 +34,7 @@ basisGreen = #81A715
         font-size: 1.1em;
         line-height: 28px;
         text-transform: uppercase;
-        color: basisGreen;
+        color: baseGreen;
         margin-top: 35px;
         margin-bottom: 20px;
         clear: both;
@@ -55,12 +59,12 @@ basisGreen = #81A715
     }
 
     a {
-        color: basisGreen;
+        color: baseGreen;
         font-weight: 400;
     }
 
     a:hover {
-        color: #a7ce3b;
+        color: lighterGreen;
     }
 
     .timeline-box-wrap .read-more {
@@ -71,7 +75,7 @@ basisGreen = #81A715
     }
 
     .read-more:after {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E003";
         font-size: 0.7em;
         position: relative;
@@ -122,10 +126,10 @@ basisGreen = #81A715
     }
 
     .socialIcons .social-icons li a {
-        background-color: basisGreen;
-        border: solid 1px basisGreen;
+        background-color: baseGreen;
+        border: solid 1px baseGreen;
         padding: .2em .3em .2em .3em;
-        border-radius: 3px;
+        border-radius(3px);
         color: white;
     }
 
@@ -134,7 +138,7 @@ basisGreen = #81A715
     }
 
     .social-icons li a:hover .transparent-text-dark {
-        color: basisGreen;
+        color: baseGreen;
     }
 
     .socialIcons .social-icons {
@@ -142,7 +146,7 @@ basisGreen = #81A715
     }
 
     .socialIcons .social-icons li a:hover {
-        background-color: #a7ce3b;
+        background-color: lighterGreen;
     }
 
     #footer_sitemap_widget li a {
@@ -174,6 +178,10 @@ basisGreen = #81A715
     /*---------------------------------------
        2.1 Section Layout Styling
     -----------------------------------------*/
+
+.feedback .pic-container-inner {
+    border-radius(3px)
+}
 
     .services-wrap.mdm {
         padding: 0 0 0 0;
@@ -211,7 +219,7 @@ basisGreen = #81A715
         border-left: 1px solid #eaeaea;
         border-right: 1px solid #eaeaea;
         border-bottom: 4px solid #eaeaea;
-        border-radius: 3px;
+        border-radius(3px);
         -webkit-transition: all ease 0.55s;
         transition: all ease 0.55s;
     }
@@ -242,7 +250,7 @@ basisGreen = #81A715
     }
 
     .single-service.border-bottom-hover:hover {
-        border-bottom: 4px solid basisGreen;
+        border-bottom: 4px solid baseGreen;
     }
 
     .team-member:hover .member-details {
@@ -255,12 +263,12 @@ basisGreen = #81A715
     }
 
     .timeline-box-wrap .icon-container {
-        border-radius: 3%;
+        border-radius(3px);
         display: inline-block;
         overflow: hidden;
         border: 1px solid #FFF;
         background-clip: padding-box;
-        box-shadow: 0px 0px 0px 1px basisGreen;
+        box-shadow: 0px 0px 0px 1px baseGreen;
         background-color: #FAFAFA;
     }
 
@@ -275,7 +283,7 @@ basisGreen = #81A715
     .sticky-navigation-open .sticky-navigation {
         top: 0px;
         opacity: 1;
-        border-bottom: solid 2px basisGreen;
+        border-bottom: solid 2px baseGreen;
         -webkit-box-shadow: 1px 4px 3px 0px rgba(0, 0, 0, 0.06);
         -moz-box-shadow: 1px 4px 3px 0px rgba(0, 0, 0, 0.06);
         box-shadow: 1px 4px 3px 0px rgba(0, 0, 0, 0.06);
@@ -294,7 +302,7 @@ basisGreen = #81A715
 
     sticky-navigation .main-navigation ul .dropdownmenu,
     .dropdownmenu {
-        color: basisGreen;
+        color: baseGreen;
         font-weight: 600;
     }
 
@@ -317,9 +325,9 @@ basisGreen = #81A715
         top: 0px;
         opacity: 1;
         height: 115px;
-        border-bottom: solid 3px basisGreen;
-        border-top: solid 3px basisGreen;
-        border-radius: 3px;
+        border-bottom: solid 3px baseGreen;
+        border-top: solid 3px baseGreen;
+        border-radius(3px);
         padding: 0 1em 0 1em;
     }
 
@@ -340,11 +348,11 @@ basisGreen = #81A715
         padding: 10px 20px;
         margin: 0 0 20px;
         font-size: 17.5px;
-        border-left: 5px solid basisGreen;
+        border-left: 5px solid baseGreen;
     }
 
     .entry-content.content-page img {
-        border: solid 2px basisGreen;
+        border: solid 2px baseGreen;
         padding: .4em;
     }
 
@@ -366,12 +374,12 @@ basisGreen = #81A715
     #rpwwt-recent-posts-widget-with-thumbnails-2 img {
         width: 75px;
         height: 75px;
-        border-radius: 3% !important;
+        border-radius(3px) !important;
         display: inline-block;
         overflow: hidden;
         border: 1px solid #FFF;
         background-clip: padding-box;
-        box-shadow: 0px 0px 0px 1px basisGreen;
+        box-shadow: 0px 0px 0px 1px baseGreen;
         background-color: #FAFAFA;
         margin: .1em 1em 1.5em .1em;
     }
@@ -390,7 +398,7 @@ basisGreen = #81A715
 
     #secondary .widget-title {
         font-size: 20px;
-        color: basisGreen;
+        color: baseGreen;
         text-transform: uppercase;
         font-weight: 400;
         margin: 0;
@@ -403,7 +411,7 @@ basisGreen = #81A715
     }
 
     a.synved-social-button.synved-social-button-share.synved-social-size-32.synved-social-resolution-single.synved-social-provider-facebook.nolightbox {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E004"
     }
     /*---------------------------------------
@@ -411,7 +419,7 @@ basisGreen = #81A715
     -----------------------------------------*/
 
     .entry-content.content-page div form {
-        border: solid 1px basisGreen;
+        border: solid 1px baseGreen;
         padding: 2em;
         margin: 35px 0;
     }
@@ -444,7 +452,7 @@ basisGreen = #81A715
     }
 
     span.wpcf7-not-valid-tip:before {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E004";
         padding: 0 .5em 0 0.3em;
     }
@@ -452,10 +460,9 @@ basisGreen = #81A715
     div.wpcf7-validation-errors,
     div.wpcf7-mail-sent-ng {
         border: solid 1px red;
-        border-radius: 3px;
+        border-radius(3px);
         background-color: white;
         color: #F00;
-        border-radius: 3px;
         text-align: left;
         padding: .3em;
         font-size: .8em;
@@ -469,22 +476,19 @@ basisGreen = #81A715
         position: relative;
         outline: none;
         cursor: pointer;
-        border: 1px solid basisGreen;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border: 1px solid baseGreen;
+        border-radius(3px);
         padding: .7em;
         margin: 1em;
         font-size: .9em;
-        background-color: basisGreen;
+        background-color: baseGreen;
         color: white;
         background-image: none;
     }
 
     input#searchsubmit:hover {
-        background-color: #a7ce3b;
-        border: 1px solid basisGreen;
+        background-color: lighterGreen;
+        border: 1px solid baseGreen;
         text-decoration: none;
     }
 
@@ -533,24 +537,24 @@ basisGreen = #81A715
     .widget_search.search-submit:hover {
         box-shadow: none;
         background: none;
-        color: basisGreen;
+        color: baseGreen;
     }
 
     .search-submit:focus {
         box-shadow: none !important;
         background: none !important;
-        color: basisGreen;
+        color: baseGreen;
     }
 
     .search-submit:active {
         box-shadow: none !important;
         background: none !important;
-        color: basisGreen;
+        color: baseGreen;
     }
 
     .standard-button,
     .navbar-register-button {
-        background-color: basisGreen;
+        background-color: baseGreen;
         background-image: none;
         background-size: contain;
         border: solid 2px white;
@@ -559,45 +563,43 @@ basisGreen = #81A715
     }
 
     .standard-button:hover {
-        background-color: #a7ce3b;
+        background-color: lighterGreen;
         border: solid 2px white;
     }
 
     #scrollUp {
         bottom: 20px;
-        background: basisGreen !important;
+        background: baseGreen !important;
         opacity: .9;
-        border-radius: 3px;
+        border-radius(3px);
         -webkit-transition: background 300ms linear;
         transition: background 300ms linear;
-        border: solid 1px #a7ce3b;
+        border: solid 1px lighterGreen;
         height: 32px;
         width: 32px;
         text-decoration: none;
     }
 
     #scrollUp:hover {
-        background: #a7ce3b !important;
-        border: solid 1px basisGreen;
+        background: lighterGreen !important;
+        border: solid 1px baseGreen;
     }
 
     .entry-content.content-page button,
     input[type="button"],
     input[type="reset"],
     input[type="submit"] {
-        background-color: basisGreen;
+        background-color: baseGreen;
         background-image: none;
         background-size: contain;
         text-shadow: none;
         border: none;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        border-radius(3px);
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 12px;
         line-height: 1.6;
-        border: solid 1px basisGreen;
+        border: solid 1px baseGreen;
         padding: 10px 30px 10px 30px;
         color: #ffffff;
         -webkit-transition: none;
@@ -609,7 +611,7 @@ basisGreen = #81A715
     input[type="button"]:hover,
     input[type="reset"]:hover,
     input[type="submit"]:hover {
-        background: basisGreen;
+        background: baseGreen;
         border-color: inherit;
     }
 
@@ -628,8 +630,8 @@ basisGreen = #81A715
     input[type="button"]:hover,
     input[type="reset"]:hover,
     input[type="submit"]:hover {
-        background: #a7ce3b;
-        border: solid 1px basisGreen;
+        background: lighterGreen;
+        border: solid 1px baseGreen;
     }
 
     .btn-primary:hover,
@@ -639,7 +641,7 @@ basisGreen = #81A715
     .btn-primary.active,
     .open>.dropdown-toggle.btn-primary {
         color: #fff;
-        background-color: #a7ce3b;
+        background-color: lighterGreen;
         border-color: white;
         box-shadow: none;
     }
@@ -652,19 +654,19 @@ basisGreen = #81A715
     input[type="button"]:active,
     input[type="reset"]:active,
     input[type="submit"]:active {
-        border-color: basisGreen;
+        border-color: baseGreen;
         box-shadow: none;
-        background-color: #a7ce3b;
+        background-color: lighterGreen;
     }
     /*---------------------------------------
        6 Icon Styling
     -----------------------------------------*/
 
     .icon-arrows-down:before {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E001";
         background: white;
-        color: basisGreen;
+        color: baseGreen;
     }
 
     .icon-up-open:after {
@@ -684,66 +686,47 @@ basisGreen = #81A715
     }
 
     .icon-arrows-up:before {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E004";
         background: white;
-        color: basisGreen;
-    }
-
-    .widget_search.search-form:before {
-        content: "\e0a6";
-        font-family: "stamp-icons" !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        font-variant: normal !important;
-        text-transform: none !important;
-        speak: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-size: 25px;
-        position: absolute;
-        right: 11px;
-        top: 10px;
-        height: 25px;
-        width: 25px;
+        color: baseGreen;
     }
 
     .icon-arrows-down:before {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E001";
     }
 
     .icon-social-blogger:before {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E008";
     }
 
     .icon-arrow-carrot-down:before {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E001";
         font-size: 0.4em;
     }
 
     .icon-arrow-carrot-up:before {
-        font-family: "Icons" !important;
+        font-family: iconFont !important;
         content: "\E004";
         font-size: 0.4em;
     }
 
     .entry-content.content-page ul li:before {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E005";
-        color: basisGreen;
+        color: baseGreen;
         font-size: .7em;
         position: relative;
         right: 1em;
     }
 
     .entry-content.content-page ul li ul li:before {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E006";
-        color: basisGreen;
+        color: baseGreen;
         font-size: .2em;
         position: relative;
         right: 5.5em;
@@ -751,9 +734,9 @@ basisGreen = #81A715
     }
 
     .single-service.border-bottom-hover.mdm h3:before {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E007";
-        color: basisGreen;
+        color: baseGreen;
         position: relative;
         right: .4em;
         top: .1em;
@@ -761,7 +744,7 @@ basisGreen = #81A715
     }
 
     .standard-button:after {
-        font-family: "Icons";
+        font-family: iconFont;
         content: "\E003";
         font-size: .9em;
         padding: 0em 0 0 1em;
@@ -820,9 +803,7 @@ basisGreen = #81A715
             height: 25px;
             margin: 0;
             padding: 0;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 0;
+            border-radius(0px);
             background: #fff;
         }
         li.has_children {
