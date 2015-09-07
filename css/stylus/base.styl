@@ -751,8 +751,18 @@ border-radius() {
         position: relative;
         top: 1px;
     }
+
     /*---------------------------------------
-       7 Media Queries
+       8 Accessibility Styles
+    -----------------------------------------*/
+
+    .navbar-inverse .navbar-nav > li > a:focus {
+    color: baseGreen;
+    border-bottom: solid 1px baseGreen;
+    }
+
+    /*---------------------------------------
+       8 Media Queries
     -----------------------------------------*/
 
     @media (max-width: 1095px) {

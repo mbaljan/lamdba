@@ -656,7 +656,14 @@ input[type="submit"]:active {
   top: 1px;
 }
 /*---------------------------------------
-       7 Media Queries
+       8 Accessibility Styles
+    -----------------------------------------*/
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #81a715;
+  border-bottom: solid 1px #81a715;
+}
+/*---------------------------------------
+       8 Media Queries
     -----------------------------------------*/
 @media (max-width: 1095px) {
   .socialIcons .social-icons {
