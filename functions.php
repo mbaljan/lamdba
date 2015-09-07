@@ -48,7 +48,7 @@ function parallax_one_setup() {
 		'parallax_footer_menu' => esc_html__('Footer Menu', 'parallax-one'),
 	) );
 
-	
+
 	 /* Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
@@ -63,7 +63,7 @@ function parallax_one_setup() {
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
-	
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support('custom-background',apply_filters( 'parallax_one_custom_background_args', array(
 		'default-repeat'         => 'no-repeat',
@@ -76,7 +76,7 @@ function parallax_one_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Custom_Header
 	 */
-	
+
 	add_theme_support( 'custom-header',apply_filters( 'parallax_one_custom_header_args', array(
 		'default-image' => parallax_get_file('/images/background-images/background.jpg'),
 		'width'         => 1000,
@@ -84,14 +84,14 @@ function parallax_one_setup() {
 		'flex-height'   => true,
 		'flex-width'    => true,
 	)));
-	
+
 	register_default_headers( array(
 		'parallax_one_default_header_image' => array(
 			'url'   => parallax_get_file('/images/background-images/background.jpg'),
 			'thumbnail_url' => parallax_get_file('/images/background-images/background_thumbnail.jpg'),
 		),
 	));
-	
+
 	//Theme Support for WooCommerce
 	add_theme_support( 'woocommerce' );
 
@@ -100,14 +100,14 @@ function parallax_one_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' );
 
 	/* Set the image size by cropping the image */
 	add_image_size( 'parallax-one-post-thumbnail-big', 730, 340, true );
 	add_image_size( 'parallax-one-post-thumbnail-mobile', 500, 233, true );
 
 	// Latest news Section (homepage)
-	add_image_size( 'parallax-one-post-thumbnail-latest-news', 150, 150, true ); 	
+	add_image_size( 'parallax-one-post-thumbnail-latest-news', 150, 150, true );
 	add_image_size( 'parallax_one_team', 268, 273, true );
 	add_image_size( 'parallax_one_services',60,62,true );
 	add_image_size( 'parallax_one_customers',75,75,true );
@@ -134,8 +134,8 @@ function parallax_one_media_uploader_custom_sizes( $sizes ) {
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function parallax_one_widgets_init() {
-	
-	register_sidebar( 
+
+	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'parallax-one' ),
 			'id'            => 'sidebar-1',
@@ -146,8 +146,8 @@ function parallax_one_widgets_init() {
 			'after_title'   => '</h2><div class="colored-line-left"></div><div class="clearfix widget-title-margin"></div>',
 		)
 	);
-	
-	register_sidebars( 4, 
+
+	register_sidebars( 4,
 		array(
 			'name' => esc_html__('Footer area %d','parallax-one'),
 			'id' => 'footer-area',
@@ -155,9 +155,9 @@ function parallax_one_widgets_init() {
 			'after_widget'  => '</div>',
 			'before_title'	=> '<h3 class="widget-title">',
 			'after_title'	=> '</h3>'
-		) 
+		)
 	);
-	
+
 }
 add_action( 'widgets_init', 'parallax_one_widgets_init' );
 
@@ -189,7 +189,7 @@ function parallax_one_scripts() {
 	wp_enqueue_script( 'parallax-one-bootstrap', parallax_get_file('/js/bootstrap.min.js'), array(), '3.3.5', true );
     wp_enqueue_style( 'additional-styles', parallax_get_file( '/css/base.css'),array(), '0.0.1');
     wp_enqueue_style( 'icon-styles', parallax_get_file( '/css/iconfont.css'),array(), '0.0.1');
-		
+
 	wp_enqueue_script( 'parallax-one-custom-all', parallax_get_file('/js/custom.all.js'), array('jquery'), '1.0.0', true );
 
 	if ( is_front_page() ) {
@@ -273,70 +273,70 @@ require_once get_template_directory() . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'parallax_one_register_required_plugins' );
 function parallax_one_register_required_plugins() {
-	
+
 		$plugins = array(
 			array(
-	 
+
 				'name'      => 'Intergeo Maps - Google Maps Plugin',
-	 
+
 				'slug'      => 'intergeo-maps',
-	 
+
 				'required'  => false
-	 
+
 			),
-			
+
 			array(
-			
+
 				'name'     => 'ShortPixel Image Optimizer',
-			
+
 				'slug' 	   => 'shortpixel-image-optimiser',
 
 				'source'   => get_stylesheet_directory() . '/lib/plugins/shortpixel-image-optimiser.zip',
 
 				'required' => false
-			
+
 			)
 		);
-	
+
 	$config = array(
-        'default_path' => '',                      
-        'menu'         => 'tgmpa-install-plugins', 
-        'has_notices'  => true,                   
-        'dismissable'  => true,                  
-        'dismiss_msg'  => '',                   
-        'is_automatic' => false,                 
-        'message'      => '',     
+        'default_path' => '',
+        'menu'         => 'tgmpa-install-plugins',
+        'has_notices'  => true,
+        'dismissable'  => true,
+        'dismiss_msg'  => '',
+        'is_automatic' => false,
+        'message'      => '',
         'strings'      => array(
             'page_title'                      => esc_html__( 'Install Required Plugins', 'parallax-one' ),
             'menu_title'                      => esc_html__( 'Install Plugins', 'parallax-one' ),
-            'installing'                      => esc_html__( 'Installing Plugin: %s', 'parallax-one' ), 
+            'installing'                      => esc_html__( 'Installing Plugin: %s', 'parallax-one' ),
             'oops'                            => esc_html__( 'Something went wrong with the plugin API.', 'parallax-one' ),
             'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ),
             'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ),
             'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ),
             'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ),
             'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ),
-            'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), 
-            'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), 
-            'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), 
+            'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ),
+            'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ),
+            'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ),
             'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
             'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins' ),
             'return'                          => esc_html__( 'Return to Required Plugins Installer', 'parallax-one' ),
             'plugin_activated'                => esc_html__( 'Plugin activated successfully.', 'parallax-one' ),
-            'complete'                        => esc_html__( 'All plugins installed and activated successfully. %s', 'parallax-one' ), 
+            'complete'                        => esc_html__( 'All plugins installed and activated successfully. %s', 'parallax-one' ),
             'nag_type'                        => 'updated'
         )
     );
- 
+
 	tgmpa( $plugins, $config );
- 
+
 }
 
 add_action('wp_footer','parallax_one_php_style', 100);
 function parallax_one_php_style() {
-	
+
 	echo '<style type="text/css">';
-	
+
 	$parallax_one_title_color = get_theme_mod('parallax_one_title_color');
 	if(!empty($parallax_one_title_color)){
 		echo '.dark-text { color: '. $parallax_one_title_color .' }';
@@ -345,7 +345,7 @@ function parallax_one_php_style() {
 	if(!empty($parallax_one_text_color)){
 		echo 'body{ color: '.$parallax_one_text_color.'}';
 	}
-	
+
 	$parallax_one_enable_move = get_theme_mod('paralax_one_enable_move');
 	$parallax_one_first_layer = get_theme_mod('paralax_one_first_layer', parallax_get_file('/images/background1.png'));
 	$parallax_one_second_layer = get_theme_mod('paralax_one_second_layer',parallax_get_file('/images/background2.png'));
@@ -374,7 +374,7 @@ function parallax_get_file($file){
 	if( in_array($file_parts['extension'], $accepted_ext) ){
 		$file_path = get_stylesheet_directory() . $file;
 		if ( file_exists( $file_path ) ){
-			return esc_url(get_stylesheet_directory_uri() . $file); 
+			return esc_url(get_stylesheet_directory_uri() . $file);
 		} else {
 			return esc_url(get_template_directory_uri() . $file);
 		}
@@ -389,7 +389,7 @@ function parallax_get_file($file){
  * Change number of related products on product page
  * Set your own value for 'posts_per_page'
  *
- */ 
+ */
 
 add_filter( 'woocommerce_output_related_products_args', 'parallax_one_related_products_args' );
 
@@ -404,16 +404,16 @@ function parallax_one_related_products_args( $args ) {
 function parallax_one_prevent_wporg_update( $r, $url ) {
     if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) )
         return $r; // Not a theme update request. Bail immediately.
- 
+
     $themes = @unserialize( $r['body']['themes'] );
     unset( $themes[ get_option( 'template' ) ] );
     unset( $themes[ get_option( 'stylesheet' ) ] );
     $r['body']['themes'] = serialize( $themes );
     return $r;
 }
- 
+
 add_filter( 'http_request_args', 'parallax_one_prevent_wporg_update', 5, 2 );
 
 
- require 'inc/cwp-update-free.php'; 
+ require 'inc/cwp-update-free.php';
 
