@@ -232,6 +232,15 @@ section#ribbon {
 /*---------------------------------------
        3 Navigation Styling
     -----------------------------------------*/
+.sticky-navigation {
+  min-height: 105px;
+}
+
+.navbar-toggle {
+    margin-right: 5px;
+    padding: 1.5em 10px .5em 10px;
+}
+
 .sticky-navigation-open .sticky-navigation {
   top: 0px;
   opacity: 1;
@@ -240,6 +249,11 @@ section#ribbon {
   -moz-box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.06);
   box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.06);
 }
+
+.navbar-brand > img {
+   max-height: 100px;
+}
+
 .container>.navbar-header {
   margin-left: 0;
   margin-right: 0;
@@ -247,7 +261,7 @@ section#ribbon {
 #stamp-navigation {
   float: right;
   position: relative;
-  top: 0.3em;
+  top: 1.5em;
 }
 sticky-navigation .main-navigation ul .dropdownmenu,
 .dropdownmenu {
