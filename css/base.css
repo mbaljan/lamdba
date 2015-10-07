@@ -183,6 +183,12 @@ div.mdm p {
   -webkit-transition: all ease 0.55s;
   transition: all ease 0.55s;
 }
+
+#happy_customers_wrap {
+    overflow: hidden;
+    height: 50em;
+}
+
 section#ribbon {
   background-image: url("../images/background-images/parallax-img/parallax-img1.jpg");
 }
@@ -228,6 +234,32 @@ section#ribbon {
 .services {
   background-color: #fff;
   border-bottom: 1px solid #eaebec;
+}
+
+.fadeout {
+    position: relative;
+    bottom: 4em;
+    height: 4em;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
 }
 /*---------------------------------------
        3 Navigation Styling
