@@ -33,7 +33,7 @@ function parallax_one_customize_register( $wp_customize ) {
 		'priority' => 30,
 		'capability' => 'edit_theme_options',
 		'theme_supports' => '',
-		'title' => esc_html__( 'Appearance', 'parallax-one' )
+		'title' => esc_html__( 'Allgemeine Einstellungen', 'parallax-one' )
 	) );
 
 	$wp_customize->add_setting( 'parallax_one_text_color', array(
@@ -114,7 +114,7 @@ function parallax_one_customize_register( $wp_customize ) {
 		'priority' => 31,
 		'capability' => 'edit_theme_options',
 		'theme_supports' => '',
-		'title' => esc_html__( 'Header section', 'parallax-one' )
+		'title' => esc_html__( 'Header/Kundenlogos', 'parallax-one' )
 	) );
 
 	/* HEADER CONTENT */
@@ -269,8 +269,8 @@ function parallax_one_customize_register( $wp_customize ) {
 
 	/* SERVICES SECTION */
 	$wp_customize->add_section( 'parallax_one_services_section' , array(
-			'title'       => esc_html__( 'Services section', 'parallax-one' ),
-			'priority'    => 32,
+			'title'       => esc_html__( 'Unser Service - Einstellungen', 'parallax-one' ),
+			'priority'    => 33,
 	));
 
 	/* Services title */
@@ -327,8 +327,8 @@ function parallax_one_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'parallax_one_about_section' , array(
-			'title'       => esc_html__( 'About section', 'parallax-one' ),
-			'priority'    => 33,
+			'title'       => esc_html__( 'Über Uns - Einstellungen', 'parallax-one' ),
+			'priority'    => 32,
 	));
 
 	/* About title */
@@ -383,7 +383,7 @@ function parallax_one_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'parallax_one_team_section' , array(
-			'title'       => esc_html__( 'Team section', 'parallax-one' ),
+			'title'       => esc_html__( 'Self Assessments Einstellungen', 'parallax-one' ),
 			'priority'    => 34,
 	));
 
@@ -441,7 +441,7 @@ function parallax_one_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'parallax_one_testimonials_section' , array(
-			'title'       => esc_html__( 'Testimonial section', 'parallax-one' ),
+			'title'       => esc_html__( 'Unser Team Einstellungen', 'parallax-one' ),
 			'priority'    => 35,
 	));
 
@@ -503,7 +503,7 @@ function parallax_one_customize_register( $wp_customize ) {
 
 	/* RIBBON SETTINGS */
 	$wp_customize->add_section( 'parallax_one_ribbon_section' , array(
-		'title'       => esc_html__( 'Ribbon section', 'parallax-one' ),
+		'title'       => esc_html__( 'Teaser Einstellungen', 'parallax-one' ),
 		'priority'    => 36,
 	));
 
@@ -565,7 +565,7 @@ function parallax_one_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'parallax_one_latest_news_section' , array(
-			'title'       => esc_html__( 'Latest news section', 'parallax-one' ),
+			'title'       => esc_html__( 'Blog Einstellungen', 'parallax-one' ),
 			'priority'    => 36
 	));
 
@@ -588,7 +588,7 @@ function parallax_one_customize_register( $wp_customize ) {
 
 	/* CONTACT SETTINGS */
 	$wp_customize->add_section( 'parallax_one_contact_section' , array(
-		'title'       => esc_html__( 'Contact section', 'parallax-one' ),
+		'title'       => esc_html__( 'Kontakt Einstellungen', 'parallax-one' ),
 		'priority'    => 37,
 	));
 
@@ -670,7 +670,7 @@ function parallax_one_customize_register( $wp_customize ) {
 	/********************************************************/
 
 	$wp_customize->add_section( 'parallax_one_footer_section' , array(
-		'title'       => esc_html__( 'Footer options', 'parallax-one' ),
+		'title'       => esc_html__( 'Footer Einstellungen', 'parallax-one' ),
       	'priority'    => 39,
       	'description' => esc_html__('The main content of this section is customizable in: Customize -> Widgets -> Footer area. ','parallax-one'),
 	));
@@ -717,7 +717,7 @@ function parallax_one_customize_register( $wp_customize ) {
 	/********************************************************/
 
 	$wp_customize->add_section( 'parallax_one_general_section' , array(
-		'title'       => esc_html__( 'Advanced options', 'parallax-one' ),
+		'title'       => esc_html__( 'Weiterführende Einstellungen', 'parallax-one' ),
       	'priority'    => 40,
       	'description' => esc_html__('Paralax One theme general options','parallax-one'),
 	));
