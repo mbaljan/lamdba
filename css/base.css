@@ -48,6 +48,11 @@ h3.colored-text.mdm {
     margin-bottom: 1em;
 }
 
+h5, .h5 {
+    font-size: 14px;
+    color: #81a715 !important;
+}
+
 a {
     color: #81a715;
     font-weight: 400;
@@ -85,6 +90,22 @@ a.read-more:hover {
     font-weight: 300;
 }
 
+.team-member .member-details {
+    padding: .9em !important;
+    border: solid 1px #81a715;
+}
+
+.team-member:hover .member-details {
+    bottom: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background:rgba(255, 255, 255, 0.9)!important;
+    border: solid 1px #81a715;
+     border-radius: 3px;
+    color: black !important;
+}
 
 /*---------------------------------------
        2 Layout Styling
@@ -311,13 +332,15 @@ section#ribbon {
     /* IE6-9 */
 }
 
-.fadeout.content {
-    position: relative;
-    bottom: 13em;
-    height: 13em;
-    margin-bottom: -22em;
+.member-pic img {
+    width: 100%;
+    width: 150px;
+    height: 211px;
 }
 
+.team-member.border-bottom-hover {
+    border: none;
+}
 
 /*---------------------------------------
        3 Navigation Styling
@@ -343,6 +366,9 @@ section#ribbon {
 
 .navbar-brand > img {
     max-height: 100px;
+    height: 84px;
+    width: 154px;
+}
 }
 
 .container>.navbar-header {

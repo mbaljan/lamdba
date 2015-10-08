@@ -413,6 +413,19 @@ function parallax_one_customize_register( $wp_customize ) {
 		'priority'    => 2,
 	));
 
+	/* Link*/
+	$wp_customize->add_setting( 'parallax_one_our_team_link', array(
+		'default' => esc_html__('Link zum self Assessment'),
+		'sanitize_callback' => 'parallax_one_sanitize_text',
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control( 'parallax_one_our_team_link', array(
+		'label'    => esc_html__( 'Link', 'parallax-one' ),
+		'section'  => 'parallax_one_team_section',
+		'active_callback' => 'parallax_one_show_on_front',
+		'priority'    => 2,
+	));
+
 
     /* Team content */
 	$wp_customize->add_setting( 'parallax_one_team_content', array(
@@ -432,7 +445,8 @@ function parallax_one_customize_register( $wp_customize ) {
 		'priority' => 3,
         'parallax_image_control' => true,
 		'parallax_title_control' => true,
-		'parallax_subtitle_control' => true
+		'parallax_subtitle_control' => true,
+		'parallax_link_control' => true
 	) ) );
 
 	/********************************************************/

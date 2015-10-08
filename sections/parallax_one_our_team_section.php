@@ -1,5 +1,5 @@
 <!-- =========================
- SECTION: TEAM   
+ SECTION: TEAM
 ============================== -->
 <?php
 	$parallax_one_our_team_title = get_theme_mod('parallax_one_our_team_title','Our Team');
@@ -21,7 +21,7 @@
 				<div class="container">
 
 					<!-- SECTION HEADER -->
-					<?php 
+					<?php
 						if( !empty($parallax_one_our_team_title) || !empty($parallax_one_our_team_subtitle)){ ?>
 							<div class="section-header">
 							<?php
@@ -41,9 +41,9 @@
 								}
 							?>
 							</div>
-					<?php 
+					<?php
 						}
-			
+
 
 						if(!empty($parallax_one_team_content)){
 							echo '<div class="row team-member-wrap">';
@@ -66,26 +66,38 @@
 											<?php if(!empty($parallax_one_team_member->title) || !empty($parallax_one_team_member->subtitle)){?>
 											<div class="member-details">
 												<div class="member-details-inner">
-													<?php 
+													<?php
 													if( !empty($parallax_one_team_member->title) ){?>
 														<h5 class="colored-text"><?php echo esc_attr($parallax_one_team_member->title);?></h5>
-													<?php 
+													<?php
 													}
 													if( !empty($parallax_one_team_member->subtitle) ){ ?>
 														<div class="small-text">
-															<?php 
+															<?php
 															   echo esc_attr($parallax_one_team_member->subtitle);
-															?>	
+															?>
 														</div>
+
+
 
 													<?php
 													}
+
+													if( !empty($parallax_one_team_member->link) ){ ?>
+														<?php
+														echo '<a href="'.esc_url($parallax_one_team_member->link).'" class="assessment-link">Start</a>';
+														?>
+
+
+													<?php
+													}
+
 													?>
 												</div><!-- .member-details-inner -->
 											</div><!-- .member-details -->
 											<?php } ?>
 										</div><!-- .team-member -->
-									</div><!-- .team-member -->         
+									</div><!-- .team-member -->
 									<!-- MEMBER -->
 						<?php
 								}
@@ -95,7 +107,7 @@
 				</div>
 			</div><!-- container  -->
 		</section><!-- #section9 -->
-		
+
 <?php
 	}
 ?>
