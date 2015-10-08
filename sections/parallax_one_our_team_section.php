@@ -85,7 +85,7 @@
 
 													if( !empty($parallax_one_team_member->link) ){ ?>
 														<?php
-														echo '<a href="'.esc_url($parallax_one_team_member->link).'" class="assessment-link">Start</a>';
+														echo '<a href="'.esc_url($parallax_one_team_member->link).'" class="btn btn-primary small-button">Start</a>';
 														?>
 
 
