@@ -10,14 +10,14 @@
  * @package parallax-one
  */
 
-	get_header(); 
+	get_header();
 ?>
 
 	</div>
 	<!-- /END COLOR OVER IMAGE -->
 </header>
 <!-- /END HOME / HEADER  -->
-
+<div class="header-teaser"><?php if (has_post_thumbnail()) {the_post_thumbnail('full');} ?></div>
 <div class="content-wrap">
 	<div class="container">
 
