@@ -124,6 +124,11 @@ a.read-more:hover {
     margin-bottom: 2em;
 }
 
+.only-logo .navbar-header img {
+    max-width: 1000px;
+    margin: 3em 0 0 0;
+}
+
 #primary {
     padding-right: 15px;
     margin: 0px 0;
@@ -711,6 +716,16 @@ input[type="submit"]:active {
     border-color: #81a715;
     box-shadow: none;
     background-color: #a7ce3b;
+}
+
+a.btn.btn-primary.small-button {
+    background-color:#81a715;
+    border: solid 1px #81a715;
+    margin: 1em;
+}
+
+a.btn.btn-primary.small-button:hover {
+    background-color:#a7ce3b;;
 }
 
 /*---------------------------------------
