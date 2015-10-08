@@ -208,6 +208,11 @@ footer.footer .widget {
 /*---------------------------------------
        2.1 Section Layout Styling
     -----------------------------------------*/
+.header .overlay-layer {
+    padding-top: 84px;
+    padding-bottom: 2em;
+    height: auto;
+}
 
 .feedback .pic-container-inner {
     -webkit-border-radius: 3px;
@@ -439,7 +444,7 @@ blockquote {
 .entry-content span {
     font-weight: 400;
     color: #313131;
-    font-size: .9rem;
+    font-size:  1em;
     line-height: 26px;
     max-width: 44em;
 }
