@@ -26,7 +26,7 @@
 
 
 							if( !empty($parallax_one_our_services_title) ){
-								echo '<h2 class="dark-text">'.esc_attr($parallax_one_our_services_title).'</h2><div class="colored-line"></div>';
+								echo '<h2 class="dark-text limit-size-heading">'.esc_attr($parallax_one_our_services_title).'</h2><div class="colored-line"></div>';
 							} elseif ( isset( $wp_customize )   ) {
 								echo '<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>';
 							}
@@ -79,7 +79,7 @@
 							echo '</div>';
 						}
 					?>
-				</div>	
+				</div>
 			</div>
 		</section>
 <?php

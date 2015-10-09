@@ -26,7 +26,7 @@
 							<div class="section-header">
 							<?php
 								if( !empty($parallax_one_our_team_title) ){
-									echo '<h2 class="dark-text">'.esc_attr($parallax_one_our_team_title).'</h2><div class="colored-line"></div>';
+									echo '<h2 class="dark-text limit-size-heading">'.esc_attr($parallax_one_our_team_title).'</h2><div class="colored-line"></div>';
 								} elseif ( isset( $wp_customize )   ) {
 									echo '<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>';
 								}
@@ -35,7 +35,7 @@
 
 							<?php
 								if( !empty($parallax_one_our_team_subtitle) ){
-									echo '<div class="sub-heading">'.esc_attr($parallax_one_our_team_subtitle).'</div>';
+									echo '<div class="sub-heading limit-size-text">'.esc_attr($parallax_one_our_team_subtitle).'</div>';
 								} elseif ( isset( $wp_customize )   ) {
 									echo '<div class="sub-heading paralax_one_only_customizer"></div>';
 								}
@@ -51,6 +51,7 @@
 							foreach($parallax_one_team_decoded as $parallax_one_team_member){
 								if( !empty($parallax_one_team_member->image_url) ||  !empty($parallax_one_team_member->title) || !empty($parallax_one_team_member->subtitle)){?>
 									<div class="col-md-3 team-member-box">
+									<h5 class="colored-text"><?php echo esc_attr($parallax_one_team_member->title);?></h5>
 										<div class="team-member border-bottom-hover">
 											<div class="member-pic">
 												<?php
@@ -68,7 +69,7 @@
 												<div class="member-details-inner">
 													<?php
 													if( !empty($parallax_one_team_member->title) ){?>
-														<h5 class="colored-text"><?php echo esc_attr($parallax_one_team_member->title);?></h5>
+
 													<?php
 													}
 													if( !empty($parallax_one_team_member->subtitle) ){ ?>

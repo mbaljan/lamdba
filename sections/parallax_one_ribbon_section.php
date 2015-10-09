@@ -1,5 +1,5 @@
 <!-- =========================
- SECTION: RIBBON   
+ SECTION: RIBBON
 ============================== -->
 <?php
 
@@ -9,14 +9,14 @@
 	$parallax_one_button_link = get_theme_mod('parallax_one_button_link','#');
 
 	if(!empty($parallax_one_ribbon_title) || !empty($parallax_one_button_text)){
-		
+
 		if(!empty($ribbon_background)){
 			echo '<section class="call-to-action ribbon-wrap" id="ribbon" style="background-image:url('.$ribbon_background.');">';
 		} else {
 			echo '<section class="call-to-action ribbon-wrap" id="ribbon">';
 		}
-	
-	
+
+
 ?>
 		<div class="section-overlay-layer">
 			<div class="container">
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 <?php
 	}
 ?>

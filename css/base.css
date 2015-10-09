@@ -108,6 +108,14 @@ a.read-more:hover {
     color: black !important;
 }
 
+.sub-heading.limit-size-text {
+    padding:0 10em;
+}
+
+.limit-size-heading {
+    padding: 0 5em;
+}
+
 
 /*---------------------------------------
        2 Layout Styling
