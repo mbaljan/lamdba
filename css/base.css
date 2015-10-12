@@ -377,6 +377,17 @@ section#ribbon {
     height: 140px;
 }
 
+li.h-entry.tweet.js-tweetIdInfo.customisable-border {
+    border-bottom: solid 1px #F7F8FA;
+}
+
+.client-logos li img {
+    max-height: 25px;
+    opacity: 0.6;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
 
 /*---------------------------------------
        3 Navigation Styling
@@ -464,11 +475,12 @@ blockquote {
 .entry-content,
 .entry-content p,
 .entry-content span {
-    font-weight: 400;
+    font-weight: 300;
     color: #313131;
     font-size:  1em;
-    line-height: 26px;
+    line-height: 28px;
     max-width: 44em;
+    font-style: normal;
 }
 .entry-content.content-page figure {
     float: left;
@@ -489,6 +501,14 @@ blockquote {
     margin: 0.1em 1em 1.5em 0.1em;
 }
 
+.rpwwt-post-excerpt {
+    font-size: .8em;
+    font-weight: 300;
+}
+.rpwwt-post-date {
+    font-size: .9em;
+}
+
 /*TODO: Temporary solution for disabling Post Navigation*/
 nav.navigation.post-navigation {
     display: none;
@@ -496,7 +516,7 @@ nav.navigation.post-navigation {
 #secondary {
     padding-left: 30px;
     border-left: 1px solid #e7e7e7;
-    margin: 6.5em 0;
+    margin: 0 0;
     padding-right: 15px;
 }
 #secondary .widget-title {
