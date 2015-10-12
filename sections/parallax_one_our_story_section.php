@@ -24,7 +24,7 @@
 						<div class="col-md-6 content-section brief-content-one">
 							<?php
 								if( !empty($parallax_one_our_story_title) ){
-									echo '<h2 class="text-left dark-text">'.esc_attr($parallax_one_our_story_title).'</h2><div class="colored-line-left"></div>';
+									echo '<h2 class="text-left dark-text ">'.esc_attr($parallax_one_our_story_title).'</h2><div class="colored-line-left"></div>';
 								} elseif ( isset( $wp_customize )   ) {
 									echo '<h2 class="text-left dark-text paralax_one_only_customizer"></h2><div class="colored-line-left paralax_one_only_customizer"></div>';
 								}

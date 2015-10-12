@@ -44,6 +44,12 @@ h1.single-title {
     margin-top: 90px;
 }
 
+.header-style-one .intro-section h5 {
+    margin-top: 13px;
+    margin-bottom: 70px;
+    color: white !important;
+}
+
 h3.colored-text.mdm {
     margin-bottom: 1em;
 }
@@ -134,7 +140,7 @@ a.read-more:hover {
 
 .only-logo .navbar-header img {
     max-width: 1000px;
-    margin: 3em 0 0 0;
+    margin: 5em 0 0 0;
 }
 
 #primary {
@@ -362,6 +368,15 @@ section#ribbon {
     border: none;
 }
 
+.overlay-layer-wrap {
+    border-bottom: solid 2px #81a715;
+}
+
+.single-service.border-bottom-hover img {
+    width: 100px;
+    height: 140px;
+}
+
 
 /*---------------------------------------
        3 Navigation Styling
@@ -392,7 +407,6 @@ section#ribbon {
 }
 
 
-}
 .container>.navbar-header {
     margin-left: 0;
     margin-right: 0;
@@ -1028,6 +1042,14 @@ a.btn.btn-primary.small-button:hover {
     .mdmContainer {
         width: 100%;
     }
+
+    sub-heading.limit-size-text {
+    padding:0 0em;
+}
+
+.limit-size-heading {
+    padding: 0 0em;
+}
 }
 @media (max-width: 580px) {
     .header .overlay-layer {
@@ -1049,6 +1071,7 @@ a.btn.btn-primary.small-button:hover {
     .icon-up-open:after {
         top: 1px;
     }
+
 }
 @media (max-width: 580px) and (min-width: 768px) {
     .container>.navbar-header,
