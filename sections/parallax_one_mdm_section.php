@@ -1,74 +1,95 @@
+<!-- =========================
+ SECTION: SELF ASSESSMENT
+============================== -->
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package parallax-one
- */
+	$parallax_one_mdm_title = get_theme_mod('parallax_one_mdm_title','Our Services');
+	$parallax_one_mdm_subtitle = get_theme_mod('parallax_one_mdm_subtitle','Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
+	$parallax_one_mdm = get_theme_mod('parallax_one_mdm_content',
+		json_encode(
+			array(
+					array('choice'=>'parallax_icon','icon_value' => 'icon-basic-webpage-multiple','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
+					array('choice'=>'parallax_icon','icon_value' => 'icon-ecommerce-graph3','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
+					array('choice'=>'parallax_icon','icon_value' => 'icon-basic-geolocalize-05','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one'))
+			)
+		)
+	);
 
-//TODO: integrate in backend
-
-	get_header();
+	if(!empty($parallax_one_mdm_title) || !empty($parallax_one_mdm_subtitle) || !empty($parallax_one_mdm)){
 ?>
-    <section class="services" id="services">
-        <div class="section-overlay-layer">
-            <div class="container">
+		<section class="services" id="services">
+			<div class="section-overlay-layer">
+				<div class="container">
 
-                <!-- SECTION HEADER -->
-                <div class="section-header">
+					<!-- SECTION HEADER -->
+					<div class="section-header">
+						<?php
 
-								<h2 class="dark-text">MDM Seminare</h2><div class="colored-line"></div>
 
-								<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>
+							if( !empty($parallax_one_mdm_title) ){
+								echo '<h2 class="dark-text limit-size-heading">'.esc_attr($parallax_one_mdm_title).'</h2><div class="colored-line"></div>';
+							} elseif ( isset( $wp_customize )   ) {
+								echo '<h2 class="dark-text paralax_one_only_customizer"></h2><div class="colored-line paralax_one_only_customizer"></div>';
+							}
 
-								<div class="sub-heading">Profitieren Sie von unserer Expertise und lassen Sie sich von unseren Experten trainieren.</div>
+						?>
 
-                                                                                                <span class="teaser-seminare"></span>
+						<?php
 
-								<div class="sub-heading paralax_one_only_customizer"></div>
-                </div>
 
-                <div id="our_services_wrap" class="services-wrap services-wrap parallax_one_grid parallax_one_grid_sqZq7wjtIE">
+							if( !empty($parallax_one_mdm_subtitle) ){
+								echo '<div class="sub-heading">'.esc_attr($parallax_one_mdm_subtitle).'</div>';
+							} elseif ( isset( $wp_customize )   ) {
+								echo '<div class="sub-heading paralax_one_only_customizer"></div>';
+							}
+						?>
+					<span class="teaser-seminare"></span>
+					</div>
 
-				    <div class="parallax_one_grid_col_3 parallax_one_grid_column_1 parallax_one_grid_first mdmContainer">
 
-                        <div class="single-service border-bottom-hover mdm">
+					<?php
+						if( !empty($parallax_one_mdm) ){
+							$parallax_one_mdm_decoded = json_decode($parallax_one_mdm);
+							echo '<div id="our_services_wrap" class="services-wrap">';
+								foreach($parallax_one_mdm_decoded as $parallax_one_mdm_box){
+									if( (!empty($parallax_one_mdm_box->icon_value) && $parallax_one_mdm_box->icon_value!='No Icon' && $parallax_one_mdm_box->choice == 'parallax_icon')  || (!empty($parallax_one_mdm_box->image_url)  && $parallax_one_mdm_box->choice == 'parallax_image') || !empty($parallax_one_mdm_box->title) || !empty($parallax_one_service_box->text) ){
+										echo '<div class="service-box"><div class="single-service border-bottom-hover">';
 
-                        <h3 class="colored-text mdm">Seminare</h3>
+											if( !empty($parallax_one_mdm_box->choice) && $parallax_one_mdm_box->choice !== 'parallax_none'  ){
+												if ( $parallax_one_mdm_box->choice == 'parallax_icon' ){
+													if( !empty($parallax_one_mdm_box->icon_value) ) {
+														echo '<div class="service-icon colored-text"><span class="'.esc_attr($parallax_one_mdm_box->icon_value).'"></span></div>';
+													}
+												}
+												if( $parallax_one_mdm_box->choice == 'parallax_image' ){
+													if( !empty($parallax_one_mdm_box->image_url)){
+														echo '<img src="'.esc_url($parallax_one_mdm_box->image_url).'"/>';
+													}
+												}
+											}
 
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+											if(!empty($parallax_one_mdm_box->title)){
+												echo '<h3 class="colored-text">'.esc_attr($parallax_one_mdm_box->title).'</h3>';
+											}
 
-                        </div>
+											if(!empty($parallax_one_mdm_box->text)){
+												echo '<p>'. esc_attr($parallax_one_mdm_box->text).'</p>';
+											}
 
-                    </div>
+											      if( !empty($parallax_one_mdm_box->link) ){
 
-                     <div class="parallax_one_grid_col_3 parallax_one_grid_column_2 mdmContainer">
+                                                        								echo '<a href="'.esc_url($parallax_one_mdm_box->link).'" class="btn btn-primary small-button">Details</a>';
 
-                        <div class="single-service border-bottom-hover mdm">
+                                                   									 }
 
-                        <h3 class="colored-text mdm">MDM Seminar</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-
-                        </div>
-
-                    </div>
-
-                      <div class="parallax_one_grid_col_3 parallax_one_grid_column_3 parallax_one_grid_last mdmContainer">
-
-                        <div class="single-service border-bottom-hover mdm">
-
-                        <h3 class="colored-text mdm">MDM Seminar</h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+										echo '</div></div>';
+									}
+								}
+							echo '</div>';
+						}
+					?>
+				</div>
+			</div>
+		</section>
+<?php
+	}
+?>
