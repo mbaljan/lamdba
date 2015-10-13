@@ -5,13 +5,21 @@
  * @package parallax-one
  */
 
-	get_header(); 
+	get_header();
 ?>
 
 	</div>
 	<!-- /END COLOR OVER IMAGE -->
 </header>
 <!-- /END HOME / HEADER  -->
+
+<?php if (has_post_thumbnail()) {
+        echo '<div class="header-teaser">';
+        the_post_thumbnail('full');
+        echo '</div>';
+    } else {
+        echo '<div class="spacing-header"></div>';
+        } ?>
 
 <div class="content-wrap">
 	<div class="container">

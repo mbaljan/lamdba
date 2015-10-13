@@ -2,6 +2,7 @@
        1 Fonts and Links Styling
     -----------------------------------------*/
 
+
 h1.single-title {
     font-size: 1.3rem;
     line-height: 28px;
@@ -10,6 +11,8 @@ h1.single-title {
     margin-top: 0;
 }
 
+.intro h2,
+.row.profiles h2,
 .entry-content h2 {
     font-size: 1.2em;
     line-height: 28px;
@@ -54,8 +57,7 @@ h3.colored-text.mdm {
     margin-bottom: 1em;
 }
 
-h5,
-.h5 {
+h5 {
     font-size: 14px;
     color: #81a715 !important;
 }
@@ -138,6 +140,11 @@ a.read-more:hover {
     margin-bottom: 2em;
 }
 
+.header-teaser  img {
+    max-height: 300px;
+    min-height: 300px;
+}
+
 .spacing-header {
     margin-bottom: 5em;
 }
@@ -148,7 +155,7 @@ a.read-more:hover {
 }
 
 #primary {
-    padding-right: 15px;
+    padding: 0;
     margin: 0px 0;
 }
 
@@ -483,7 +490,9 @@ blockquote p {
 }
 .entry-content,
 .entry-content p,
-.entry-content span {
+.entry-content span,
+.row.profiles p,
+.intro p {
     font-weight: 300;
     color: #313131;
     font-size:  1em;
@@ -890,7 +899,7 @@ a.btn.btn-primary.small-button:hover {
   margin-bottom: -20px;
 }
 .intro {
-  padding-left: 140px;
+    margin-bottom: 3em
 }
 .intro h2 {
   margin: 0 0 7px;
@@ -916,11 +925,18 @@ a.btn.btn-primary.small-button:hover {
   float: left;
 }
 .profile-content {
-  font-size: 14px;
+
   padding: 27px 20px 0 0;
-  line-height: 27px;
   margin: 0px 0 0 160px;
+      font-weight: 300;
+    color: #313131;
+    font-size: 1em;
+    line-height: 27px;
+    max-width: 44em;
+    font-style: normal;
+
 }
+
 .profile-content h3 {
   margin: 0;
   color: #81a715;
