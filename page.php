@@ -17,7 +17,7 @@
 	<!-- /END COLOR OVER IMAGE -->
 </header>
 <!-- /END HOME / HEADER  -->
-<div class="header-teaser"><?php if (has_post_thumbnail()) {the_post_thumbnail('full');} ?></div>
+<?php if (has_post_thumbnail()) {echo '<div class="header-teaser">'; the_post_thumbnail('full'); echo '</div>';} else {echo '<div class="spacing-header"></div>';} ?>
 <div class="content-wrap">
 	<div class="container">
 
